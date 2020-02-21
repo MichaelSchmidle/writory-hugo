@@ -1,0 +1,263 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Hugo Shortcodes · Writory</title>
+    
+    <meta name="description" content="Documentation and showcase of the Writory theme for Hugo">
+    <meta name="generator" content="Hugo 0.65.2" />
+    <link
+        href="https://fonts.googleapis.com/css?family=Playfair+Display:600,600i|Raleway:400,400i,700,700i&display=swap"
+        rel="stylesheet">
+    
+    <link rel="stylesheet" type="text/css" href="/medium-blue.css">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+<link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-180x180.png">
+<link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+<link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96">
+<link rel="icon" type="image/png" href="/android-chrome-192x192.png" sizes="192x192">
+<meta name="msapplication-square70x70logo" content="/smalltile.png" />
+<meta name="msapplication-square150x150logo" content="/mediumtile.png" />
+<meta name="msapplication-wide310x150logo" content="/widetile.png" />
+<meta name="msapplication-square310x310logo" content="/largetile.png" />
+</head>
+
+<body>
+    <nav class="sy-nav-bar">
+        <div class="container">
+            <a class="navbar-brand" href="/"><img
+                    src="/writory-logogram.svg" alt="Writory"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a href="/"
+                        class="nav-item nav-link">Home</a>
+                    <a href="/books/"
+                        class="nav-item nav-link active">Books</a>
+                    <a href="/series"
+                        class="nav-item nav-link">Series</a>
+                    <a href="/authors"
+                        class="nav-item nav-link">Authors</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <main>
+        
+<div class="sy-status-bar">
+    <div>
+        <span class="text-white-50"><a href="/books/getting-started/">Getting Started</a> ·</span> Chapter
+        3 of
+        3
+    </div>
+</div>
+<div class="sy-jumbotron">
+    <div>
+        <h1>Hugo Shortcodes</h1>
+        <p>Making it easy to use common GUI elements in your books</p>
+    </div>
+</div>
+<div class="container py-5">
+    <div class="row">
+        <div class="col-lg-8">
+            <div class="sy-content">
+                <h2 id="alert">Alert</h2>
+<p>Examples:
+<div class="card mb-5">
+    <div class="card-body">
+        
+        
+<div class="alert sy-alert-primary" role="alert">
+    This is a primary alert.
+</div>
+<div class="alert sy-alert-secondary" role="alert">
+    This is a secondary alert.
+</div>
+<div class="alert sy-alert-success" role="alert">
+    This is a success alert.
+</div>
+<div class="alert sy-alert-danger" role="alert">
+    This is a danger alert.
+</div>
+<div class="alert sy-alert-warning" role="alert">
+    This is a warning alert.
+</div>
+<div class="alert sy-alert-info" role="alert">
+    This is an info alert.
+</div>
+<div class="alert sy-alert-light" role="alert">
+    This is a light alert.
+</div>
+<div class="alert sy-alert-dark mb-5" role="alert">
+    This is a dark alert.
+</div>
+
+        
+    </div>
+</div></p>
+<p>The corresponding Shortcodes in Markdown:</p>
+<pre><code>{{&lt;alert class=&#34;sy-alert-primary&#34;&gt;}}This is a primary alert.{{&lt;/alert&gt;}}
+{{&lt;alert class=&#34;sy-alert-secondary&#34;&gt;}}This is a secondary alert.{{&lt;/alert&gt;}}
+{{&lt;alert class=&#34;sy-alert-success&#34;&gt;}}This is a success alert.{{&lt;/alert&gt;}}
+{{&lt;alert class=&#34;sy-alert-danger&#34;&gt;}}This is a danger alert.{{&lt;/alert&gt;}}
+{{&lt;alert class=&#34;sy-alert-warning&#34;&gt;}}This is a warning alert.{{&lt;/alert&gt;}}
+{{&lt;alert class=&#34;sy-alert-info&#34;&gt;}}This is an info alert.{{&lt;/alert&gt;}}
+{{&lt;alert class=&#34;sy-alert-light&#34;&gt;}}This is a light alert.{{&lt;/alert&gt;}}
+{{&lt;alert class=&#34;sy-alert-dark&#34;&gt;}}This is a dark alert.{{&lt;/alert&gt;}}
+</code></pre><p>It accepts one optional attribute, <code>class</code>. Use this attribute to style the alert with the above Writory classes—or with combinations of <a href="https://getbootstrap.com/docs/4.4/components/alerts/">Bootstrap Alerts classes</a> and/or <a href="https://getbootstrap.com/docs/4.4/utilities/borders/">Bootstrap Utilities classes</a>.</p>
+<h2 id="blockquote">Blockquote</h2>
+<p>Example:
+<div class="card mb-5">
+    <div class="card-body">
+        
+        
+<blockquote class="sy-blockquote">
+    This is a blockquote.
+</blockquote>
+
+        
+    </div>
+</div></p>
+<p>The corresponding Shortcode in Markdown:</p>
+<pre><code>{{&lt;blockquote class=&#34;&#34;&gt;}}This is a blockquote.{{&lt;/blockquote&gt;}}
+</code></pre><p>It accepts one optional attribute, <code>class</code>. Use this attribute to override the Writory style of the blockquote with combinations of <a href="https://getbootstrap.com/docs/4.4/utilities/borders/">Bootstrap Utilities classes</a>.</p>
+<h2 id="card">Card</h2>
+<p>Example:
+<div class="card shadow mb-5">
+    <div class="card-body">
+        
+        <h3 id="example-card">Example Card</h3>
+<p>This is a small example of a card.
+        
+    </div>
+</div></p>
+<p>The corresponding Shortcode in Markdown:</p>
+<pre><code>{{&lt;card class=&#34;shadow&#34; markdownify=&#34;true&#34;&gt;}}
+### Example Card
+This is a small example of a card.
+{{&lt;/card&gt;}}
+</code></pre><p>It accepts two optional attributes, <code>class</code> and <code>markdownify</code>.</p>
+<p>Use the <code>class</code> attribute to style the card with combinations of <a href="https://getbootstrap.com/docs/4.4/components/card/">Bootstrap Card classes</a> and/or <a href="https://getbootstrap.com/docs/4.4/utilities/borders/">Bootstrap Utilities classes</a>.</p>
+<p>Define with the boolean <code>markdownify</code> attribute whether the card&rsquo;s content should be interpreted as Markdown. If false or omitted, the content is rendered as-is.</p>
+<h2 id="link-button">Link Button</h2>
+<p>Examples:</p>
+<div class="card mb-5">
+    <div class="card-body">
+        
+        
+<a class="btn btn-primary" href="/books/">List books</a>
+<a class="btn btn-secondary" href="/books/">List books</a>
+<a class="btn btn-outline-info" href="/books/">List books</a>
+
+        
+    </div>
+</div>
+<p>The corresponding Shortcodes in Markdown:</p>
+<pre><code>{{&lt;link-button href=&#34;/books/&#34; class=&#34;btn-primary&#34;&gt;}}List books{{&lt;/link-button&gt;}}
+{{&lt;link-button href=&#34;/books/&#34; class=&#34;btn-secondary&#34;&gt;}}List books{{&lt;/link-button&gt;}}
+{{&lt;link-button href=&#34;/books/&#34; class=&#34;btn-outline-info&#34;&gt;}}List books{{&lt;/link-button&gt;}}
+</code></pre><p>It accepts two optional attributes, <code>href</code> and <code>class</code>.</p>
+<p>Define the <code>href</code> attribute to provide a link target address, just like you would in regular HTML anchor tags à la <code>&lt;a href=&quot;https://writory.org/&quot;&gt;Writory&lt;/a&gt;</code>.</p>
+<p>Use the <code>class</code> attribute to style the link button with combinations of <a href="https://getbootstrap.com/docs/4.4/components/buttons/">Bootstrap Buttons classes</a> and/or <a href="https://getbootstrap.com/docs/4.4/utilities/borders/">Bootstrap Utilities classes</a>.</p>
+
+            </div>
+            <hr>
+            <h6>Next Chapter</h6>
+            <div class="shadow card">
+                <div class="card-body">
+                    
+                    
+                    This story
+
+is <span class="sy-badge-success">developing</span> · More chapters will follow
+
+                    
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-lg d-lg-none">
+            <hr>
+        </div>
+        
+        <div class="col">
+            
+<h6>Table of Contents</h6>
+<div class="list-group">
+    <a href="/books/getting-started/"
+        class="list-group-item list-group-item-action">Index</a>
+    
+    <a href="/books/getting-started/quick-start/"
+        class="list-group-item list-group-item-action">Quick Start</a>
+    
+    <a href="/books/getting-started/building-blocks/"
+        class="list-group-item list-group-item-action">Building Blocks</a>
+    
+    <a href="/books/getting-started/hugo-shortcodes/"
+        class="list-group-item list-group-item-action active">Hugo Shortcodes</a>
+    
+</div>
+
+<p class="text-muted mt-3">
+    This story
+
+is <span class="sy-badge-success">developing</span> · More chapters will follow
+</p>
+
+        </div>
+    </div>
+</div>
+
+    </main>
+    <footer class="sy-footer">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg">
+                    <p class="mb-0"><small>Copyright ©
+                            2020 by
+                            <a href="https://blog.ypertex.com/authors/michael-schmidle/">Michael Schmidle</a></small></p>
+                    <p><small>Original content released under the <a href="https://github.com/MichaelSchmidle/writory-hugo/blob/master/LICENSE">MIT License</a></small></p>
+                </div>
+                
+                <div class="col-lg-1">
+                    <img src="/writory-logogram.svg" alt="Writory" class="wy-logogram">
+                </div>
+                
+                <div class="col-lg">
+                    
+                    
+                    <p class="mb-0"><small>Mirage illustrations licensed by <a href="https://icons8.com/">Icons8 LLC.</a></small></p>
+                    
+                    <p class="mb-0"><small>Made with <a href="https://gohugo.io/">Hugo</a> and <a href="https://getbootstrap.com/">Bootstrap</a></small></p>
+                    
+                    
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

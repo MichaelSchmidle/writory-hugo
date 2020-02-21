@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Metadata · Writory</title>
+    
+    <meta name="description" content="Documentation and showcase of the Writory theme for Hugo">
+    <meta name="generator" content="Hugo 0.65.2" />
+    <link
+        href="https://fonts.googleapis.com/css?family=Playfair+Display:600,600i|Raleway:400,400i,700,700i&display=swap"
+        rel="stylesheet">
+    
+    <link rel="stylesheet" type="text/css" href="/medium-blue.css">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+<link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-180x180.png">
+<link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+<link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96">
+<link rel="icon" type="image/png" href="/android-chrome-192x192.png" sizes="192x192">
+<meta name="msapplication-square70x70logo" content="/smalltile.png" />
+<meta name="msapplication-square150x150logo" content="/mediumtile.png" />
+<meta name="msapplication-wide310x150logo" content="/widetile.png" />
+<meta name="msapplication-square310x310logo" content="/largetile.png" />
+</head>
+
+<body>
+    <nav class="sy-nav-bar">
+        <div class="container">
+            <a class="navbar-brand" href="/"><img
+                    src="/writory-logogram.svg" alt="Writory"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a href="/"
+                        class="nav-item nav-link">Home</a>
+                    <a href="/books/"
+                        class="nav-item nav-link active">Books</a>
+                    <a href="/series"
+                        class="nav-item nav-link">Series</a>
+                    <a href="/authors"
+                        class="nav-item nav-link">Authors</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <main>
+        
+<div class="sy-status-bar">
+    <div>
+        <span class="text-white-50"><a href="/books/customizing-writory/">Customizing Writory</a> ·</span> Chapter
+        3 of
+        3
+    </div>
+</div>
+<div class="sy-jumbotron">
+    <div>
+        <h1>Metadata</h1>
+        <p>Add metadata like copyright and licenses to your site</p>
+    </div>
+</div>
+<div class="container py-5">
+    <div class="row">
+        <div class="col-lg-8">
+            <div class="sy-content">
+                <h2 id="available-metadata-configurations">Available Metadata Configurations</h2>
+<p>If configured in your site configuration file, Writory currently respects the following customizations. Future releases of Writory may support more metadata configurations.</p>
+<h3 id="copyright-notice">Copyright Notice</h3>
+<p>Writory by default shows the generic copyright notice <code>Copyright © {{ .Site.LastChange }} · All rights reserved</code> in the footer. Please note that this date variable only is populated by Hugo if at least one <a href="/books/getting-started/building-blocks/#chapters">chapter</a> carries a <code>date</code> in its front matter.</p>
+<p>The notice can be customized by two parameters:</p>
+<ul>
+<li><code>copyright</code>: Licensing information as string (may contain Markdown)</li>
+<li><code>authors</code>: Copyright holders as list of elements in the <code>params</code> section (elements may contain Markdown)</li>
+</ul>
+<p>These parameters are defined as per the following example <code>config.yml</code> file of this site:</p>
+<pre><code>copyright: &quot;Original content released under the [MIT License](https://github.com/MichaelSchmidle/writory-hugo/blob/master/LICENSE)&quot;
+
+params:
+  authors: [&quot;[Michael Schmidle](https://blog.ypertex.com/authors/michael-schmidle/)&quot;]
+</code></pre><h2 id="third-party-references">Third Party References</h2>
+<p>Writory per default includes a few references in the footer: to <a href="https://gohugo.io/">Hugo</a>, to itself, and to <a href="https://icons8.com/">Icons8</a>.</p>
+<p>If necessary, these third party references can be customized via the configuration parameter <code>thirdPartyReferences</code> in the <code>params</code> section. The parameter may contain Markdown.</p>
+<div class="alert sy-alert-warning my-5" role="alert">
+    <h5 id="warning">Warning</h5>
+<p>Remember to <strong>remove the illustrations</strong> from your site if you decide to omit the reference to Icons8. They only may be used with the attribution.
+</div>
+<p>Example of the <code>config.yml</code> file of this site:</p>
+<pre><code>params:
+    thirdPartyReferences: [&quot;Mirage illustrations licensed by [Icons8 LLC.](https://icons8.com/)&quot;, &quot;Made with [Hugo](https://gohugo.io/) and [Bootstrap](https://getbootstrap.com/)&quot;]
+</code></pre>
+            </div>
+            <hr>
+            <h6>Next Chapter</h6>
+            <div class="shadow card">
+                <div class="card-body">
+                    
+                    
+                    This story
+
+is <span class="sy-badge-success">developing</span> · More chapters will follow
+
+                    
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-lg d-lg-none">
+            <hr>
+        </div>
+        
+        <div class="col">
+            
+<h6>Table of Contents</h6>
+<div class="list-group">
+    <a href="/books/customizing-writory/"
+        class="list-group-item list-group-item-action">Index</a>
+    
+    <a href="/books/customizing-writory/logo-and-logogram/"
+        class="list-group-item list-group-item-action">Logo and Logogram</a>
+    
+    <a href="/books/customizing-writory/color-schemes/"
+        class="list-group-item list-group-item-action">Color Schemes</a>
+    
+    <a href="/books/customizing-writory/metadata/"
+        class="list-group-item list-group-item-action active">Metadata</a>
+    
+</div>
+
+<p class="text-muted mt-3">
+    This story
+
+is <span class="sy-badge-success">developing</span> · More chapters will follow
+</p>
+
+        </div>
+    </div>
+</div>
+
+    </main>
+    <footer class="sy-footer">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg">
+                    <p class="mb-0"><small>Copyright ©
+                            2020 by
+                            <a href="https://blog.ypertex.com/authors/michael-schmidle/">Michael Schmidle</a></small></p>
+                    <p><small>Original content released under the <a href="https://github.com/MichaelSchmidle/writory-hugo/blob/master/LICENSE">MIT License</a></small></p>
+                </div>
+                
+                <div class="col-lg-1">
+                    <img src="/writory-logogram.svg" alt="Writory" class="wy-logogram">
+                </div>
+                
+                <div class="col-lg">
+                    
+                    
+                    <p class="mb-0"><small>Mirage illustrations licensed by <a href="https://icons8.com/">Icons8 LLC.</a></small></p>
+                    
+                    <p class="mb-0"><small>Made with <a href="https://gohugo.io/">Hugo</a> and <a href="https://getbootstrap.com/">Bootstrap</a></small></p>
+                    
+                    
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

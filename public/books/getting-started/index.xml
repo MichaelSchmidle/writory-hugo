@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Getting Started on Writory</title>
+    <link>https://writory.org/books/getting-started/</link>
+    <description>Recent content in Getting Started on Writory</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Original content released under the [MIT License](https://github.com/MichaelSchmidle/writory-hugo/blob/master/LICENSE)</copyright>
+    <lastBuildDate>Wed, 29 Jan 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://writory.org/books/getting-started/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Hugo Shortcodes</title>
+      <link>https://writory.org/books/getting-started/hugo-shortcodes/</link>
+      <pubDate>Wed, 29 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://writory.org/books/getting-started/hugo-shortcodes/</guid>
+      <description>Making it easy to use common GUI elements in your books</description>
+    </item>
+    
+    <item>
+      <title>Building Blocks</title>
+      <link>https://writory.org/books/getting-started/building-blocks/</link>
+      <pubDate>Tue, 28 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://writory.org/books/getting-started/building-blocks/</guid>
+      <description>Understanding the blocks available to build your book site</description>
+    </item>
+    
+    <item>
+      <title>Quick Start</title>
+      <link>https://writory.org/books/getting-started/quick-start/</link>
+      <pubDate>Tue, 28 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://writory.org/books/getting-started/quick-start/</guid>
+      <description>Get up and running in five simple steps</description>
+    </item>
+    
+  </channel>
+</rss>

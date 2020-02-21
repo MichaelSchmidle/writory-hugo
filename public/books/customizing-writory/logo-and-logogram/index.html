@@ -1,0 +1,233 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Logo and Logogram · Writory</title>
+    
+    <meta name="description" content="Documentation and showcase of the Writory theme for Hugo">
+    <meta name="generator" content="Hugo 0.65.2" />
+    <link
+        href="https://fonts.googleapis.com/css?family=Playfair+Display:600,600i|Raleway:400,400i,700,700i&display=swap"
+        rel="stylesheet">
+    
+    <link rel="stylesheet" type="text/css" href="/medium-blue.css">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+<link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-180x180.png">
+<link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+<link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96">
+<link rel="icon" type="image/png" href="/android-chrome-192x192.png" sizes="192x192">
+<meta name="msapplication-square70x70logo" content="/smalltile.png" />
+<meta name="msapplication-square150x150logo" content="/mediumtile.png" />
+<meta name="msapplication-wide310x150logo" content="/widetile.png" />
+<meta name="msapplication-square310x310logo" content="/largetile.png" />
+</head>
+
+<body>
+    <nav class="sy-nav-bar">
+        <div class="container">
+            <a class="navbar-brand" href="/"><img
+                    src="/writory-logogram.svg" alt="Writory"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a href="/"
+                        class="nav-item nav-link">Home</a>
+                    <a href="/books/"
+                        class="nav-item nav-link active">Books</a>
+                    <a href="/series"
+                        class="nav-item nav-link">Series</a>
+                    <a href="/authors"
+                        class="nav-item nav-link">Authors</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <main>
+        
+<div class="sy-status-bar">
+    <div>
+        <span class="text-white-50"><a href="/books/customizing-writory/">Customizing Writory</a> ·</span> Chapter
+        1 of
+        3
+    </div>
+</div>
+<div class="sy-jumbotron">
+    <div>
+        <h1>Logo and Logogram</h1>
+        <p>Brand your Writory site</p>
+    </div>
+</div>
+<div class="container py-5">
+    <div class="row">
+        <div class="col-lg-8">
+            <div class="sy-content">
+                <h2 id="difference-between-logo-and-logogram">Difference Between Logo and Logogram</h2>
+<p>The iconic part of logos is called <em>logogram</em>, while any text is called <em>logotype</em>. Together, logogram and logotype constitute your <em>logo</em>.</p>
+<p>If configured, Writory takes your logo and logogram and displays them in two places—otherwise it&rsquo;ll use your site&rsquo;s title as configured in <code>.Site.Title</code>:</p>
+<ul>
+<li>The <strong>logo</strong> is shown on the home page.</li>
+<li>The <strong>logogram</strong> is shown in the navigation bar.</li>
+</ul>
+<h2 id="configure-logo">Configure Logo</h2>
+<p>Define the parameter <code>logo</code> inside the <code>params</code> setion of your site&rsquo;s configuration file.</p>
+<p>If you use a <code>config.yml</code> file, it would look like this:</p>
+<pre><code>params:
+  logo: writory-logo.svg
+</code></pre><p>Hugo will look for this logo file inside the <code>static</code> folder of your site. Once configured, your logo will be shown on the home page of your site (instead of the textual name of your site).</p>
+<h2 id="configure-logogram">Configure Logogram</h2>
+<p>Define the parameter <code>logogram</code> inside the <code>params</code> section of your site&rsquo;s configuration file.</p>
+<p>If you use a <code>config.yml</code> file, it would like this:</p>
+<pre><code>prarams:
+  logogram: writory-logogram.svg
+</code></pre><p>Hugo will look for this logogram file inside the <code>static</code> folder of your site. Once configured, your logogram will be shown in the navigation bar of your site (instead of the textual name of your site).</p>
+<h2 id="use-custom-favicons">Use Custom Favicons</h2>
+<p>Writory comes with a default set of favicons. In case you want to use your own favicons to go along with your logo, just put your favicon files inside the <code>static</code> folder of your site to override the default ones.</p>
+<p>Writory uses the following icons:</p>
+<ul>
+<li>favicon.ico</li>
+<li>apple-touch-icon-57x57.png</li>
+<li>apple-touch-icon-60x60.png</li>
+<li>apple-touch-icon-72x72.png</li>
+<li>apple-touch-icon-76x76.png</li>
+<li>apple-touch-icon-114x114.png</li>
+<li>apple-touch-icon-120x120.png</li>
+<li>apple-touch-icon-144x144.png</li>
+<li>apple-touch-icon-152x152.png</li>
+<li>apple-touch-icon-180x180.png</li>
+<li>favicon-16x16.png</li>
+<li>favicon-32x32.png</li>
+<li>favicon-96x96.png</li>
+<li>android-chrome-192x192.png</li>
+<li>smalltile.png</li>
+<li>mediumtile.png</li>
+<li>widetile.png</li>
+<li>largetile.png</li>
+</ul>
+<div class="alert sy-alert-secondary my-5" role="alert">
+    <strong>Pro Tip:</strong> Use a service like <a href="https://digitalagencyrankings.com/iconogen/">Iconogen</a> to generate the entire family of icons for you.
+</div>
+<p>If you don&rsquo;t want to use the entire or a completely different set, Writory lets you do that, too:</p>
+<ul>
+<li>Create a file called <code>favicon.html</code> inside the <code>layouts/partials</code> folder of your site. In this file, provide the HTML referencing your icons.</li>
+<li>Put all icons referred to by your HTML into the <code>static</code> folder of your site.</li>
+</ul>
+<p>Writory&rsquo;s default partial was generated with <a href="https://digitalagencyrankings.com/iconogen/">Iconogen</a> and looks like this:</p>
+<pre><code>&lt;link rel=&quot;shortcut icon&quot; href=&quot;/favicon.ico&quot; type=&quot;image/x-icon&quot; /&gt;
+&lt;link rel=&quot;apple-touch-icon&quot; sizes=&quot;57x57&quot; href=&quot;/apple-touch-icon-57x57.png&quot;&gt;
+&lt;link rel=&quot;apple-touch-icon&quot; sizes=&quot;60x60&quot; href=&quot;/apple-touch-icon-60x60.png&quot;&gt;
+&lt;link rel=&quot;apple-touch-icon&quot; sizes=&quot;72x72&quot; href=&quot;/apple-touch-icon-72x72.png&quot;&gt;
+&lt;link rel=&quot;apple-touch-icon&quot; sizes=&quot;76x76&quot; href=&quot;/apple-touch-icon-76x76.png&quot;&gt;
+&lt;link rel=&quot;apple-touch-icon&quot; sizes=&quot;114x114&quot; href=&quot;/apple-touch-icon-114x114.png&quot;&gt;
+&lt;link rel=&quot;apple-touch-icon&quot; sizes=&quot;120x120&quot; href=&quot;/apple-touch-icon-120x120.png&quot;&gt;
+&lt;link rel=&quot;apple-touch-icon&quot; sizes=&quot;144x144&quot; href=&quot;/apple-touch-icon-144x144.png&quot;&gt;
+&lt;link rel=&quot;apple-touch-icon&quot; sizes=&quot;152x152&quot; href=&quot;/apple-touch-icon-152x152.png&quot;&gt;
+&lt;link rel=&quot;apple-touch-icon&quot; sizes=&quot;180x180&quot; href=&quot;/apple-touch-icon-180x180.png&quot;&gt;
+&lt;link rel=&quot;icon&quot; type=&quot;image/png&quot; href=&quot;/favicon-16x16.png&quot; sizes=&quot;16x16&quot;&gt;
+&lt;link rel=&quot;icon&quot; type=&quot;image/png&quot; href=&quot;/favicon-32x32.png&quot; sizes=&quot;32x32&quot;&gt;
+&lt;link rel=&quot;icon&quot; type=&quot;image/png&quot; href=&quot;/favicon-96x96.png&quot; sizes=&quot;96x96&quot;&gt;
+&lt;link rel=&quot;icon&quot; type=&quot;image/png&quot; href=&quot;/android-chrome-192x192.png&quot; sizes=&quot;192x192&quot;&gt;
+&lt;meta name=&quot;msapplication-square70x70logo&quot; content=&quot;/smalltile.png&quot; /&gt;
+&lt;meta name=&quot;msapplication-square150x150logo&quot; content=&quot;/mediumtile.png&quot; /&gt;
+&lt;meta name=&quot;msapplication-wide310x150logo&quot; content=&quot;/widetile.png&quot; /&gt;
+&lt;meta name=&quot;msapplication-square310x310logo&quot; content=&quot;/largetile.png&quot; /&gt;
+</code></pre>
+            </div>
+            <hr>
+            <h6>Next Chapter</h6>
+            <div class="shadow card">
+                <div class="card-body">
+                    
+                    
+                    <h5 class="card-title">Color Schemes</h5>
+                    <p class="card-subtitle">For everyone the right colors</p>
+                    <a href="/books/customizing-writory/color-schemes/" class="sy-card-link">Read it</a>
+                    
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-lg d-lg-none">
+            <hr>
+        </div>
+        
+        <div class="col">
+            
+<h6>Table of Contents</h6>
+<div class="list-group">
+    <a href="/books/customizing-writory/"
+        class="list-group-item list-group-item-action">Index</a>
+    
+    <a href="/books/customizing-writory/logo-and-logogram/"
+        class="list-group-item list-group-item-action active">Logo and Logogram</a>
+    
+    <a href="/books/customizing-writory/color-schemes/"
+        class="list-group-item list-group-item-action">Color Schemes</a>
+    
+    <a href="/books/customizing-writory/metadata/"
+        class="list-group-item list-group-item-action">Metadata</a>
+    
+</div>
+
+<p class="text-muted mt-3">
+    This story
+
+is <span class="sy-badge-success">developing</span> · More chapters will follow
+</p>
+
+        </div>
+    </div>
+</div>
+
+    </main>
+    <footer class="sy-footer">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg">
+                    <p class="mb-0"><small>Copyright ©
+                            2020 by
+                            <a href="https://blog.ypertex.com/authors/michael-schmidle/">Michael Schmidle</a></small></p>
+                    <p><small>Original content released under the <a href="https://github.com/MichaelSchmidle/writory-hugo/blob/master/LICENSE">MIT License</a></small></p>
+                </div>
+                
+                <div class="col-lg-1">
+                    <img src="/writory-logogram.svg" alt="Writory" class="wy-logogram">
+                </div>
+                
+                <div class="col-lg">
+                    
+                    
+                    <p class="mb-0"><small>Mirage illustrations licensed by <a href="https://icons8.com/">Icons8 LLC.</a></small></p>
+                    
+                    <p class="mb-0"><small>Made with <a href="https://gohugo.io/">Hugo</a> and <a href="https://getbootstrap.com/">Bootstrap</a></small></p>
+                    
+                    
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,3 @@
+[submodule "themes/writory-hugo-theme"]
+	path = themes/writory-hugo-theme
+	url = https://github.com/MichaelSchmidle/writory-hugo-theme
