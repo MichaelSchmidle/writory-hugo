@@ -11,7 +11,7 @@ featured: 3
 ended: true
 ---
 
-{{<alert class="sy-alert-info mt-5">}}
+{{<alert class="wy-alert-info mt-5">}}
 ##### Info
 
 This book is a pretty rare case as it has no chapters. That's why you don't see any table of contents here. It serves to show you how your book looks like in Writory as long as you haven't published any of its chapters.

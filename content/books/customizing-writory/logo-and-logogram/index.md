@@ -68,7 +68,7 @@ Writory uses the following icons:
 * widetile.png
 * largetile.png
 
-{{<alert class="sy-alert-secondary my-5">}}
+{{<alert class="wy-alert-secondary my-5">}}
 **Pro Tip:** Use a service like [Iconogen](https://digitalagencyrankings.com/iconogen/) to generate the entire family of icons for you.
 {{</alert>}}
 

@@ -12,26 +12,26 @@ resources:
 
 Examples:
 {{<card class="mb-5">}}
-{{<alert class="sy-alert-primary">}}This is a primary alert.{{</alert>}}
-{{<alert class="sy-alert-secondary">}}This is a secondary alert.{{</alert>}}
-{{<alert class="sy-alert-success">}}This is a success alert.{{</alert>}}
-{{<alert class="sy-alert-danger">}}This is a danger alert.{{</alert>}}
-{{<alert class="sy-alert-warning">}}This is a warning alert.{{</alert>}}
-{{<alert class="sy-alert-info">}}This is an info alert.{{</alert>}}
-{{<alert class="sy-alert-light">}}This is a light alert.{{</alert>}}
-{{<alert class="sy-alert-dark mb-5">}}This is a dark alert.{{</alert>}}
+{{<alert class="wy-alert-primary">}}This is a primary alert.{{</alert>}}
+{{<alert class="wy-alert-secondary">}}This is a secondary alert.{{</alert>}}
+{{<alert class="wy-alert-success">}}This is a success alert.{{</alert>}}
+{{<alert class="wy-alert-danger">}}This is a danger alert.{{</alert>}}
+{{<alert class="wy-alert-warning">}}This is a warning alert.{{</alert>}}
+{{<alert class="wy-alert-info">}}This is an info alert.{{</alert>}}
+{{<alert class="wy-alert-light">}}This is a light alert.{{</alert>}}
+{{<alert class="wy-alert-dark mb-5">}}This is a dark alert.{{</alert>}}
 {{</card>}}
 
 The corresponding Shortcodes in Markdown:
 ```
-{{<htmlUnescape>}}{{&lt;alert class=&quot;sy-alert-primary&quot;&gt;}}This is a primary alert.{{&lt;/alert&gt;}}
-{{&lt;alert class=&quot;sy-alert-secondary&quot;&gt;}}This is a secondary alert.{{&lt;/alert&gt;}}
-{{&lt;alert class=&quot;sy-alert-success&quot;&gt;}}This is a success alert.{{&lt;/alert&gt;}}
-{{&lt;alert class=&quot;sy-alert-danger&quot;&gt;}}This is a danger alert.{{&lt;/alert&gt;}}
-{{&lt;alert class=&quot;sy-alert-warning&quot;&gt;}}This is a warning alert.{{&lt;/alert&gt;}}
-{{&lt;alert class=&quot;sy-alert-info&quot;&gt;}}This is an info alert.{{&lt;/alert&gt;}}
-{{&lt;alert class=&quot;sy-alert-light&quot;&gt;}}This is a light alert.{{&lt;/alert&gt;}}
-{{&lt;alert class=&quot;sy-alert-dark&quot;&gt;}}This is a dark alert.{{&lt;/alert&gt;}}{{</htmlUnescape>}}
+{{<htmlUnescape>}}{{&lt;alert class=&quot;wy-alert-primary&quot;&gt;}}This is a primary alert.{{&lt;/alert&gt;}}
+{{&lt;alert class=&quot;wy-alert-secondary&quot;&gt;}}This is a secondary alert.{{&lt;/alert&gt;}}
+{{&lt;alert class=&quot;wy-alert-success&quot;&gt;}}This is a success alert.{{&lt;/alert&gt;}}
+{{&lt;alert class=&quot;wy-alert-danger&quot;&gt;}}This is a danger alert.{{&lt;/alert&gt;}}
+{{&lt;alert class=&quot;wy-alert-warning&quot;&gt;}}This is a warning alert.{{&lt;/alert&gt;}}
+{{&lt;alert class=&quot;wy-alert-info&quot;&gt;}}This is an info alert.{{&lt;/alert&gt;}}
+{{&lt;alert class=&quot;wy-alert-light&quot;&gt;}}This is a light alert.{{&lt;/alert&gt;}}
+{{&lt;alert class=&quot;wy-alert-dark&quot;&gt;}}This is a dark alert.{{&lt;/alert&gt;}}{{</htmlUnescape>}}
 ```
 
 It accepts one optional attribute, ``class``. Use this attribute to style the alert with the above Writory classes—or with combinations of [Bootstrap Alerts classes](https://getbootstrap.com/docs/4.4/components/alerts/) and/or [Bootstrap Utilities classes](https://getbootstrap.com/docs/4.4/utilities/borders/).

@@ -35,7 +35,7 @@ Writory per default includes a few references in the footer: to [Hugo](https://g
 
 If necessary, these third party references can be customized via the configuration parameter ``thirdPartyReferences`` in the ``params`` section. The parameter may contain Markdown.
 
-{{<alert class="sy-alert-warning my-5">}}
+{{<alert class="wy-alert-warning my-5">}}
 ##### Warning
 
 Remember to **remove the illustrations** from your site if you decide to omit the reference to Icons8. They only may be used with the attribution.
