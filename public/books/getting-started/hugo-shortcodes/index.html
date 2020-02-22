@@ -82,8 +82,47 @@
     <div class="row">
         <div class="col-lg-8">
             <div class="wy-content">
-                <h2 id="alert">Alert</h2>
-<p>Examples:
+                <h2 id="figure">Figure</h2>
+<p>Example:</p>
+<div class="card mb-5">
+    <div class="card-body">
+        
+        
+<figure>
+    <img src="https://via.placeholder.com/678x452" >
+    
+    <figcaption>Image: <a href="https://placeholder.com">placeholder.com</a></figcaption>
+    
+</figure>
+
+        
+    </div>
+</div>
+<p>The corresponding Shortcode in Markdown:</p>
+<pre><code>{{&lt;figure src=&#34;https://via.placeholder.com/678x452&#34;&gt;}}
+Image: [placeholder.com](https://placeholder.com)
+{{&lt;/figure&gt;}}
+</code></pre><p>It requires the attribute <code>src</code>. This can either be the reference to a <a href="https://gohugo.io/content-management/page-resources/">Page Resource</a>, to an image in your <code>static</code> folder or to any other image with an URL.</p>
+<p>It accepts one optional attribute, <code>class</code>. Use this attribute to override the Writory style with combinations of <a href="https://getbootstrap.com/docs/4.4/utilities/borders/">Bootstrap Utilities classes</a>. <strong>Please note:</strong> The class targets the <code>&lt;img&gt;</code> tag inside the <code>&lt;figure&gt;</code> tag.</p>
+<p>If the <code>src</code> attribute points to a Page Resource, its title will be used as caption of the figure. (This can be overridden by providing a specific caption between the opening <code>{{&lt;figure&gt;}}</code> and closing <code>{{&lt;/figure&gt;}}</code> tags.) See the following example:</p>
+<div class="card mb-5">
+    <div class="card-body">
+        
+        
+<figure>
+    <img src="orange-tabby-cat-on-white-table-3687957.jpg" >
+    
+    <figcaption>Orange Tabby Cat on White Table (Image: <a href="https://www.pexels.com/photo/orange-tabby-cat-on-white-table-3687957/">Matthias Oben</a>)</figcaption>
+    
+</figure>
+
+        
+    </div>
+</div>
+<p>The corresponding Shortcode in Markdown:</p>
+<pre><code>{{&lt;figure src=&#34;orange-tabby-cat-on-white-table-3687957.jpg&#34;&gt;}}
+</code></pre><h2 id="alert">Alert</h2>
+<p>Examples:</p>
 <div class="card mb-5">
     <div class="card-body">
         
@@ -115,7 +154,7 @@
 
         
     </div>
-</div></p>
+</div>
 <p>The corresponding Shortcodes in Markdown:</p>
 <pre><code>{{&lt;alert class=&#34;wy-alert-primary&#34;&gt;}}This is a primary alert.{{&lt;/alert&gt;}}
 {{&lt;alert class=&#34;wy-alert-secondary&#34;&gt;}}This is a secondary alert.{{&lt;/alert&gt;}}
@@ -127,7 +166,7 @@
 {{&lt;alert class=&#34;wy-alert-dark&#34;&gt;}}This is a dark alert.{{&lt;/alert&gt;}}
 </code></pre><p>It accepts one optional attribute, <code>class</code>. Use this attribute to style the alert with the above Writory classes—or with combinations of <a href="https://getbootstrap.com/docs/4.4/components/alerts/">Bootstrap Alerts classes</a> and/or <a href="https://getbootstrap.com/docs/4.4/utilities/borders/">Bootstrap Utilities classes</a>.</p>
 <h2 id="blockquote">Blockquote</h2>
-<p>Example:
+<p>Example:</p>
 <div class="card mb-5">
     <div class="card-body">
         
@@ -138,12 +177,12 @@
 
         
     </div>
-</div></p>
+</div>
 <p>The corresponding Shortcode in Markdown:</p>
 <pre><code>{{&lt;blockquote class=&#34;&#34;&gt;}}This is a blockquote.{{&lt;/blockquote&gt;}}
 </code></pre><p>It accepts one optional attribute, <code>class</code>. Use this attribute to override the Writory style of the blockquote with combinations of <a href="https://getbootstrap.com/docs/4.4/utilities/borders/">Bootstrap Utilities classes</a>.</p>
 <h2 id="card">Card</h2>
-<p>Example:
+<p>Example:</p>
 <div class="card shadow mb-5">
     <div class="card-body">
         
@@ -151,7 +190,7 @@
 <p>This is a small example of a card.
         
     </div>
-</div></p>
+</div>
 <p>The corresponding Shortcode in Markdown:</p>
 <pre><code>{{&lt;card class=&#34;shadow&#34; markdownify=&#34;true&#34;&gt;}}
 ### Example Card
@@ -241,7 +280,7 @@ is <span class="wy-badge-success">developing</span> · More chapters will follow
         </div>
         
         <div class="col-lg-1">
-            <img src="/writory-logogram.svg" alt="Writory" class="wy-logogram">
+            <p><img src="/writory-logogram.svg" alt="Writory" class="wy-logogram"></p>
         </div>
         
         <div class="col-lg">

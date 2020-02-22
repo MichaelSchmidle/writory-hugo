@@ -5,14 +5,13 @@ theme: writory-hugo-theme
 
 params:
   authors: ["[Michael Schmidle](https://blog.ypertex.com/authors/michael-schmidle/)"]
-  cover: 
   description: Documentation and showcase of the [Writory theme](https://github.com/MichaelSchmidle/writory-hugo-theme) for [Hugo](https://gohugo.io/)
   logo: writory-logo-h.svg
   logogram: writory-logogram.svg
   thirdPartyReferences: [
-      "Mirage illustrations licensed by [Icons8 LLC.](https://icons8.com/)",
-      "Made with [Hugo](https://gohugo.io/) and [Bootstrap](https://getbootstrap.com/)"
-    ]
+    "Mirage illustrations licensed by [Icons8 LLC.](https://icons8.com/)",
+    "Made with [Hugo](https://gohugo.io/) and [Bootstrap](https://getbootstrap.com/)"
+  ]
 
 taxonomies:
   author: authors

@@ -8,7 +8,7 @@ resources:
   src: 
 ---
 
-Steps 1 through 3 are pretty much standard for any Hugo theme.
+{{<alert class="wy-alert-info">}}Steps 1 through 3 are pretty much standard for any Hugo theme.{{</alert>}}
 
 ## 1: Create a New Site
 

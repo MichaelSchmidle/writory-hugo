@@ -15,9 +15,9 @@ Writory provides four color themes whose primary colors are picked from the [Mir
 | Parameter Value               | Primary Color | RGB Hex | Example                  |
 | ------------------------------|---------------|---------|--------------------------|
 | ``medium-blue.css`` (default) | Medium Blue   | #0060b1 | {{<color hex="0060b1">}} |
-| ``blue.css``                  | Blue          | #0200a5 | {{<color hex="0200a5">}} |
-| ``violet.css``                | Violet        | #9600ac | {{<color hex="9600ac">}} |
-| ``pinkish-red.css``           | Pinkish Red   | #e30040 | {{<color hex="e30040">}} |
+| ``blue.css``                  | Blue          | #0200a5 | {{<color hex="0300a5">}} |
+| ``violet.css``                | Violet        | #9600ac | {{<color hex="9900ad">}} |
+| ``pinkish-red.css``           | Pinkish Red   | #e30040 | {{<color hex="e4003e">}} |
 
 Writory comes **by default with the medium-blue scheme**. In case you want to change the scheme, follow the instructions below.
 

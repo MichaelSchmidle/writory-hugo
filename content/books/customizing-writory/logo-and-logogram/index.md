@@ -6,16 +6,23 @@ date: 2020-02-02
 resources:
 - name: cover
   src: ""
+- src: writory-logo-h.png
+  title: Writory's logo
+- src: writory-logogram.png
+  title: Writory's logogram
 ---
 
 ## Difference Between Logo and Logogram
 
 The iconic part of logos is called *logogram*, while any text is called *logotype*. Together, logogram and logotype constitute your *logo*.
 
-If configured, Writory takes your logo and logogram and displays them in two places—otherwise it'll use your site's title as configured in ``.Site.Title``:
+If configured, Writory takes your logo and logogram and displays them in a few places—otherwise it'll use your site's title as configured in ``.Site.Title``:
 
 * The **logo** is shown on the home page.
-* The **logogram** is shown in the navigation bar.
+* The **logogram** is shown in the navigation bar and footer.
+
+{{<figure src="writory-logo-h.png" />}}
+{{<figure src="writory-logogram.png" class="w-25" />}}
 
 ## Configure Logo
 
@@ -68,16 +75,12 @@ Writory uses the following icons:
 * widetile.png
 * largetile.png
 
-{{<alert class="wy-alert-secondary my-5">}}
-**Pro Tip:** Use a service like [Iconogen](https://digitalagencyrankings.com/iconogen/) to generate the entire family of icons for you.
-{{</alert>}}
-
 If you don't want to use the entire or a completely different set, Writory lets you do that, too:
 
-* Create a file called ``favicon.html`` inside the ``layouts/partials`` folder of your site. In this file, provide the HTML referencing your icons.
+* Create a file called ``_favicons.html`` inside the ``layouts/partials`` folder of your site. In this file, provide the HTML referencing your icons.
 * Put all icons referred to by your HTML into the ``static`` folder of your site.
 
-Writory's default partial was generated with [Iconogen](https://digitalagencyrankings.com/iconogen/) and looks like this:
+Writory's default partial looks like this:
 
 ```
 <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
