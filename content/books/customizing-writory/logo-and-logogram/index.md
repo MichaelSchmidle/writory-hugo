@@ -6,10 +6,6 @@ date: 2020-02-02
 resources:
 - name: cover
   src: ""
-- src: writory-logo-h.png
-  title: Writory's logo
-- src: writory-logogram.png
-  title: Writory's logogram
 ---
 
 ## Difference Between Logo and Logogram
@@ -21,8 +17,13 @@ If configured, Writory takes your logo and logogram and displays them in a few p
 * The **logo** is shown on the home page.
 * The **logogram** is shown in the navigation bar and footer.
 
-{{<figure src="writory-logo-h.png" />}}
-{{<figure src="writory-logogram.png" class="w-25" />}}
+{{<figure src="/writory-logo-h.png">}}
+Writory's logo
+{{</figure>}}
+
+{{<figure src="/writory-logogram.png" class="w-25">}}
+Writory's logogram
+{{</figure>}}
 
 ## Configure Logo
 

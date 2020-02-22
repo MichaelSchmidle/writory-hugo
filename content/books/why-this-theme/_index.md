@@ -31,6 +31,6 @@ To spare me—and now you, too—these hacks and tweaks, I developed this theme.
 
 ## The Solution
 
-As a result, the Writory theme features [four color schemes](/books/customizing-writory/color-scheme/) with **12.5% reduced contrast** between the brightest and darkest colors, and **12.5% increased font sizes**. The colors are based on the [Mirage Illustrations](https://icons8.com/ouch/style/mirage-1).
+As a result, the Writory theme features [four color schemes](/books/customizing-writory/color-schemes/) with **12.5% reduced contrast** between the brightest and darkest colors, and **12.5% increased font sizes**. The colors are based on the [Mirage Illustrations](https://icons8.com/ouch/style/mirage-1).
 
 This theme also tries to properly reflect how taxonomies are usually handled with books: Authors are associated with books, not single chapters (whereas on a blog, authors are associated with single posts). Yet it allows for chapter-by-chapter publishing by introducing the "Story Status"—a tag that indicates if the story of the book has ended or if there are more chapters to come.
