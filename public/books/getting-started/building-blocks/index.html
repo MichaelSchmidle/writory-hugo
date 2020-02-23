@@ -7,11 +7,13 @@
 <title>Building Blocks · Writory</title>
 
 <meta name="description" content="Documentation and showcase of the Writory theme for Hugo">
-<meta name="generator" content="Hugo 0.65.2" />
-<link href="https://fonts.googleapis.com/css?family=Playfair+Display:600,600i|Raleway:400,400i,700,700i&display=swap"
-    rel="stylesheet">
+<meta name="generator" content="Hugo 0.65.3" />
 
 <link rel="stylesheet" type="text/css" href="/medium-blue.css">
+<link rel="stylesheet"
+    href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+<link href="https://fonts.googleapis.com/css?family=Playfair+Display:600,600i|Raleway:400,400i,700,700i&display=swap"
+    rel="stylesheet">
 <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
 <link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png">
 <link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon-60x60.png">
@@ -74,7 +76,7 @@
     </div>
 </div>
 <div class="wy-jumbotron">
-    <div>
+    <div class="container">
         <h1>Building Blocks</h1>
         <p>Understanding the blocks available to build your book site</p>
     </div>
@@ -88,8 +90,8 @@
 <p>They are stored in <code>_index.md</code> files within the book&rsquo;s directory <code>books/example-book</code>. Note the leading underscore in the file name.</p>
 <p>Books are defined by the following <a href="https://gohugo.io/content-management/front-matter/">front matter</a>:</p>
 <ul>
-<li><code>layout</code>: Don&rsquo;t change or remove this metadata. It tells Hugo to render a book like a book—otherwise, it&rsquo;d get rendered as a chapter. (By the way, &ldquo;toc&rdquo; means &ldquo;Table of Contents.&quot;)</li>
-<li><code>title</code>: String defining the title of the book</li>
+<li><code>layout</code>: <strong>Don&rsquo;t change or remove this metadata.</strong> It tells Hugo to render a book like a TOC—otherwise, it&rsquo;d get rendered as a chapter. (By the way, &ldquo;TOC&rdquo; means &ldquo;Table of Contents.&quot;)</li>
+<li><code>title</code>: String defining the title of the book.</li>
 <li><code>summary</code>: Optional string summarizing the content of the book. May contain Markdown.</li>
 <li><code>authors</code>: Optional array of authors. The names should match the authors&rsquo; <code>urlize</code>d file names. See <a href="#authors">Authors</a> below.</li>
 <li><code>series</code>: Optional string referencing the series of books this book belongs to. Like the movie &ldquo;The Force Awakens&rdquo; belongs to the &ldquo;Star Wars&rdquo; series. The name should match the series&rsquo; <code>urlize</code>d file names. See <a href="#series">Series</a> below.</li>
@@ -133,13 +135,43 @@
 <ul>
 <li><code>title</code>: String defining the name of the author</li>
 <li><code>summary</code>: Optional string summarizing the biography of the author. May contain Markdown.</li>
+<li><code>links</code>: Optional array of links, see <a href="#authors-links">below for more information</a>.</li>
 <li><code>resources</code>: Optional <a href="https://gohugo.io/content-management/page-resources/">Page Resources</a> for the author&rsquo;s cover (not in use so far) and their avatar.</li>
 <li><code>featured</code>: Optional integer defining the position in the author list. The lower the number, the higher in the list.</li>
 <li><code>draft</code>: Boolean, whether the author page is considered in draft status.</li>
 </ul>
 <p>Create a new author page with the following command:</p>
 <pre><code>hugo new --kind author authors/name-of-the-new-author
-</code></pre>
+</code></pre><h3 id="authors-links">Authors&rsquo; Links</h3>
+<p>The <code>links</code> array lets authors provide links to their online identity: to their website or blog, to their social media profiles, and so on. Since every individual is present on different platforms, Writory lets authors set their own links.</p>
+<p>This is how it works: Every item in the <code>links</code> array consists of 2-3 pieces of information:</p>
+<ul>
+<li>Required: the name of the platform</li>
+<li>Required: the address of the platform</li>
+<li>Optional: the icon class for the platform</li>
+</ul>
+<p>The format is: <code>Platform: [https://example.com/, icon class]</code>. If you wanted to add links to your author profile for your blog as well as LinkedIn, Twitter, and GitHub profiles, add the following lines to the front matter of your author&rsquo;s <code>_index.md</code> file:</p>
+<pre><code>links: [
+  Blog: [https://blog.example.com/, las la-link],
+  LinkedIn: [https://www.linkedin.com/in/example/, lab la-linkedin-in],
+  Twitter: [https://twitter.com/example/, lab la-twitter],
+  GitHub: [https://github.com/example/, lab la-github]
+]
+</code></pre><p>The icon class is taken from the free <a href="https://icons8.com/line-awesome">Line Aweseome</a> icon set. If you omit the icon class, no icon will be shown for the link.</p>
+<p>The above lines result in the following screenshot:</p>
+<figure>
+    <img src="author-links.png" >
+    
+    <figcaption>Links to an author&rsquo;s profiles on external platforms with corresponding icons</figcaption>
+    
+</figure>
+<div class="alert wy-alert-info" role="alert">
+    <h5 id="info">Info</h5>
+<p>If you want that all authors on your Writory site use the same template: Simply provide your own <a href="https://gohugo.io/content-management/archetypes/">archetype</a> file for authors with a predefined set of platforms and corresponding icon classes.</p>
+<p>Alternatively, you can also overwrite the <code>author-links.html</code> partial file. Just put a file with the same name in the <code>partials</code> folder of your site to handle links your way.</p>
+
+</div>
+
             </div>
             <hr>
             <h6>Next Chapter</h6>

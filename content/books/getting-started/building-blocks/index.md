@@ -5,7 +5,9 @@ summary: Understanding the blocks available to build your book site
 date: 2020-01-28
 resources:
 - name: cover
-  src: 
+  src: ""
+- src: author-links.png
+  title: Links to an author's profiles on external platforms with corresponding icons
 ---
 
 ## Books
@@ -16,8 +18,8 @@ They are stored in ``_index.md`` files within the book's directory ``books/examp
 
 Books are defined by the following [front matter](https://gohugo.io/content-management/front-matter/):
 
-* ``layout``: Don't change or remove this metadata. It tells Hugo to render a book like a book—otherwise, it'd get rendered as a chapter. (By the way, "toc" means "Table of Contents.")
-* ``title``: String defining the title of the book
+* ``layout``: **Don't change or remove this metadata.** It tells Hugo to render a book like a TOC—otherwise, it'd get rendered as a chapter. (By the way, "TOC" means "Table of Contents.")
+* ``title``: String defining the title of the book.
 * ``summary``: Optional string summarizing the content of the book. May contain Markdown.
 * ``authors``: Optional array of authors. The names should match the authors' ``urlize``d file names. See [Authors](#authors) below.
 * ``series``: Optional string referencing the series of books this book belongs to. Like the movie "The Force Awakens" belongs to the "Star Wars" series. The name should match the series' ``urlize``d file names. See [Series](#series) below.
@@ -81,6 +83,7 @@ Information about authors are stored in ``_index.md`` files within each author's
 
 * ``title``: String defining the name of the author
 * ``summary``: Optional string summarizing the biography of the author. May contain Markdown.
+* ``links``: Optional array of links, see [below for more information](#authors-links).
 * ``resources``: Optional [Page Resources](https://gohugo.io/content-management/page-resources/) for the author's cover (not in use so far) and their avatar.
 * ``featured``: Optional integer defining the position in the author list. The lower the number, the higher in the list.
 * ``draft``: Boolean, whether the author page is considered in draft status.
@@ -90,3 +93,38 @@ Create a new author page with the following command:
 ```
 hugo new --kind author authors/name-of-the-new-author
 ```
+
+### Authors' Links
+
+The ``links`` array lets authors provide links to their online identity: to their website or blog, to their social media profiles, and so on. Since every individual is present on different platforms, Writory lets authors set their own links.
+
+This is how it works: Every item in the ``links`` array consists of 2-3 pieces of information:
+
+* Required: the name of the platform
+* Required: the address of the platform
+* Optional: the icon class for the platform
+
+The format is: ``Platform: [https://example.com/, icon class]``. If you wanted to add links to your author profile for your blog as well as LinkedIn, Twitter, and GitHub profiles, add the following lines to the front matter of your author's ``_index.md`` file:
+
+```
+links: [
+  Blog: [https://blog.example.com/, las la-link],
+  LinkedIn: [https://www.linkedin.com/in/example/, lab la-linkedin-in],
+  Twitter: [https://twitter.com/example/, lab la-twitter],
+  GitHub: [https://github.com/example/, lab la-github]
+]
+```
+
+The icon class is taken from the free [Line Aweseome](https://icons8.com/line-awesome) icon set. If you omit the icon class, no icon will be shown for the link.
+
+The above lines result in the following screenshot:
+
+{{<figure src="author-links.png" />}}
+
+{{<alert class="wy-alert-info">}}
+##### Info
+
+If you want that all authors on your Writory site use the same template: Simply provide your own [archetype](https://gohugo.io/content-management/archetypes/) file for authors with a predefined set of platforms and corresponding icon classes.
+
+Alternatively, you can also overwrite the ``author-links.html`` partial file. Just put a file with the same name in the ``partials`` folder of your site to handle links your way.
+{{</alert>}}
