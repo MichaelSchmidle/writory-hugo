@@ -27,7 +27,7 @@ To spare me—and now you, too—these hacks and tweaks, I developed this theme.
 * Suitable font sizes
 * Suitable line length
 * Beautiful typography
-* No iconography
+* (Almost) No iconography
 
 ## The Solution
 
