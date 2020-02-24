@@ -29,6 +29,19 @@ params:
   authors: ["[Michael Schmidle](https://blog.ypertex.com/authors/michael-schmidle/)"]
 ```
 
+### Open Graph Image
+
+When you post links to your Writory site or pages to social platforms, they'll grab some metadata from these links. This allows them to display previews of the linked pages to their users.
+
+For books as well as series, the ``cover`` resource as configured in the respective front matter will be referenced as preview image—the Open Graph image. For all other pages, you can conigure a default cover in your site configuration's ``params``.
+
+For example, you can use your [logo or logogram](/books/customizing-writory/logo-and-logogram/) for these previews:
+
+```
+params:
+  cover: writory-logogram.png
+```
+
 ## Third Party References
 
 Writory per default includes a few references in the footer: to [Hugo](https://gohugo.io/), to itself, and to [Icons8](https://icons8.com/).

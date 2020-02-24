@@ -103,3 +103,7 @@ Writory's default partial looks like this:
 <meta name="msapplication-wide310x150logo" content="/widetile.png" />
 <meta name="msapplication-square310x310logo" content="/largetile.png" />
 ```
+
+## Use Your Logo/-gram as Open Graph Image
+
+See the metadata option [Open Graph Image](/books/customizing-writory/metadata/#open-graph-image).
