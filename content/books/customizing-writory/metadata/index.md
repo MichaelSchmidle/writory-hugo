@@ -39,7 +39,7 @@ For example, you can use your [logo or logogram](/books/customizing-writory/logo
 
 ```
 params:
-  cover: writory-logogram.png
+  cover: writory-logo-h-og.png
 ```
 
 ## Third Party References

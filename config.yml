@@ -5,7 +5,7 @@ theme: writory-hugo-theme
 
 params:
   authors: ["[Michael Schmidle](https://blog.ypertex.com/authors/michael-schmidle/)"]
-  cover: writory-logo-h.png
+  cover: writory-logo-h-og.png
   description: Documentation and showcase of the [Writory theme](https://github.com/MichaelSchmidle/writory-hugo-theme) for [Hugo](https://gohugo.io/)
   logo: writory-logo-h.svg
   logogram: writory-logogram.svg
