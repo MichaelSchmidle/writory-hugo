@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<title>Quick Start · Writory</title>
+<title>Navigation · Writory</title>
 
 <meta name="description" content="Documentation and showcase of the Writory theme for Hugo">
 <meta name="generator" content="Hugo 0.65.3" />
@@ -32,11 +32,11 @@
 <meta name="msapplication-square150x150logo" content="/mediumtile.png" />
 <meta name="msapplication-wide310x150logo" content="/widetile.png" />
 <meta name="msapplication-square310x310logo" content="/largetile.png" />
-<meta property="og:url" content="https://writory.org/books/getting-started/quick-start/" />
-<meta property="og:title" content="Quick Start · Writory" />
+<meta property="og:url" content="https://writory.org/books/getting-started/navigation/" />
+<meta property="og:title" content="Navigation · Writory" />
     
 
-<meta property="og:description" content="Get up and running in five simple steps" />
+<meta property="og:description" content="Learn How to Create Your Navigation Menu" />
 
 <meta property="og:image" content="https://writory.org/books/getting-started/mirage-downloading.png" />
 <meta name="twitter:card" content="summary_large_image" />
@@ -77,66 +77,55 @@
 <div class="wy-status-bar">
     <div>
         <span class="text-white-50"><a href="/books/getting-started/">Getting Started</a> ·</span> Chapter
-        1 of
+        3 of
         4
     </div>
 </div>
 <div class="wy-jumbotron">
     <div class="container">
-        <h1>Quick Start</h1>
-        <p>Get up and running in five simple steps</p>
+        <h1>Navigation</h1>
+        <p>Learn How to Create Your Navigation Menu</p>
     </div>
 </div>
 <div class="container py-5">
     <div class="row">
         <div class="col-lg-8">
             <div class="wy-content">
-                <div class="alert wy-alert-info" role="alert">
-    <h5 id="info">Info</h5>
-<p>Steps 1 through 3 are pretty much standard for any Hugo theme.
-</div>
-<h2 id="1-create-a-new-site">1: Create a New Site</h2>
-<p>Once you have <a href="https://gohugo.io/getting-started/installing">installed Hugo</a>, create a new site. To this end, run the following command from your terminal:</p>
-<pre><code>hugo new site quickstart
-</code></pre><p>This will create the folder structure required for a Hugo website.</p>
-<h2 id="2-download-writory-theme">2: Download Writory Theme</h2>
-<p>Assuming you are using <a href="https://git-scm.com/">Git</a> for your website, switch to the themes directory of the newly created site, initialize your git repository, and add the Writory theme as submodule:</p>
-<pre><code>cd quickstart
-git init
-git submodule add https://github.com/MichaelSchmidle/hugo-writory-theme/ themes/writory
-</code></pre><p>If you don&rsquo;t want to use Git, you also can download the latest release of the Writory theme from <a href="https://github.com/MichaelSchmidle/writory-hugo-theme/releases/">Github</a>. Extract the contents of the archive into the <code>themes</code> folder of your newly created Hugo site.</p>
-<h2 id="3-configure-hugo-to-use-the-writory-theme">3: Configure Hugo to Use the Writory Theme</h2>
-<p>Open the file <code>quickstart/config.toml</code> and edit or add the following lines:</p>
-<pre><code>theme = &quot;writory-hugo-theme&quot;
+                <h2 id="why-writory-leaves-the-navigation-empty-at-first">Why Writory Leaves the Navigation Empty at First</h2>
+<p>When you start your Writory site, the navigation menu at the top of the site will be empty. The idea is to give you as much freedom as possible to design your navigation according to <em>your</em> requirements. You should only have links in the navigation if you really want them there. And in the proper order, too!</p>
+<h2 id="add-entries-to-your-navigation-menu">Add Entries to Your Navigation Menu</h2>
+<p>The simplest way to create menu entries, is to to define them via front matter of your content files.</p>
+<h3 id="books">Books</h3>
+<p>For example, if you want an entry to the list of your books, simply create an <code>_index.md</code> file in the folder <code>content/books</code>. Within the file&rsquo;s front matter, set <code>head</code> as the menu and define the position of the page in the navigation.</p>
+<pre><code>title: Books
+menu:
+  head:
+    weight: 1
+</code></pre><p>Don&rsquo;t forget to add a title to this content page, otherwise Writory won&rsquo;t be able to show any on that page. By the way, you can add content and a summary to that page, too!</p>
+<p>This is how the <code>_index.md</code> file looks for <a href="/books/">writory.org/books</a>:</p>
+<pre><code>---
+title: Books
+summary: Our small library of Writory books
+menu:
+  head:
+    weight: 1
+---
 
-[taxonomies]
-author = &quot;authors&quot;
-series = &quot;series&quot;
-</code></pre><p>Run the command <code>hugo server</code> in your <code>quickstart</code> directory, browse to <code>http://localhost:1313/</code> and you will see your bare Writory site welcoming you!</p>
-<h2 id="4-add-your-first-content">4. Add Your First Content</h2>
-<p>Take advantage of the built-in archetypes. These are templates for creating Markdown files for your books, chapters, series, and authors.</p>
-<p>To create your first book, run the following command in your terminal:</p>
-<pre><code>hugo new --kind book books/my-first-book
-</code></pre><p>This will create the file <code>content/books/my-first-book/_index.md</code> ready for you to edit. Open it and you will see the following front matter:</p>
-<pre><code>layout: toc
-title: My First Book
-authors: []
-summary: &quot;&quot;
-series: &quot;&quot;
-resources:
-- name: cover
-  src: &quot;&quot;
-featured: true
-ended: false
-draft: true
-</code></pre><p>Complete it to your liking. Then add chapters, series and authors by running the following commands in your terminal:</p>
-<pre><code>hugo new --kind chapter books/my-first-book/my-first-chapter
-hugo new --kind series series/my-first-series
-hugo new --kind author authors/my-first-author
-</code></pre><p>Add your meta data to the front matter of these files and you have your first content! Remember to set <code>draft: false</code> if you want your new content to be rendered by Hugo.</p>
-<h2 id="5-modify-your-homepage">5: Modify Your Homepage</h2>
-<p>Once you have published your first book, the homepage will show a generic welcome message to your visitors. To provide your own, create an <code>_index.md</code> file in the <code>contents</code> folder of your site, then write your own Mardown text.</p>
-<p>That&rsquo;s it! You have created your Writory themed site and created your first content. Congratulations!</p>
+Find out with these fine books how to kick-start your book site with the [Writory theme](https://github.com/MichaelSchmidle/writory-hugo-theme/) and [Hugo](https://gohugo.io/), how to customize the theme to your needs—and why the heck anyone would need this:
+</code></pre><h3 id="series-and-authors">Series and Authors</h3>
+<p>The two taxonomies used by Writory can be added them the same way: Add the <code>head</code> menu to the front matter of the taxonomies&rsquo; <code>_index.md</code> files.</p>
+<p>Here&rsquo;s the source of the <code>content/series/_index.md</code> file for <a href="/series/">writory.org/series</a>:</p>
+<pre><code>---
+title: Series
+summary: Showcasing the series feature
+menu:
+  head:
+    weight: 2
+---
+
+Just to show you how this feature works, we've created a little series of books called &quot;Writory.&quot;
+</code></pre><h2 id="non-content-page-entries">Non-Content Page Entries</h2>
+<p>Hugo also allows to add further entries without using content files. See <a href="https://gohugo.io/content-management/menus/#add-non-content-entries-to-a-menu">Hugo&rsquo;s documentation</a> for more details on how to configure menus via your site&rsquo;s configuration file.</p>
 
             </div>
             <hr>
@@ -145,9 +134,9 @@ hugo new --kind author authors/my-first-author
                 <div class="card-body">
                     
                     
-                    <h5 class="card-title">Building Blocks</h5>
-                    <p class="card-subtitle">Understanding the blocks available to build your book site</p>
-                    <a href="/books/getting-started/building-blocks/" class="wy-card-link btn-primary">Read it</a>
+                    <h5 class="card-title">Hugo Shortcodes</h5>
+                    <p class="card-subtitle">Making it easy to use common GUI elements in your books</p>
+                    <a href="/books/getting-started/hugo-shortcodes/" class="wy-card-link btn-primary">Read it</a>
                     
                 </div>
             </div>
@@ -165,13 +154,13 @@ hugo new --kind author authors/my-first-author
         class="list-group-item list-group-item-action">Index</a>
     
     <a href="/books/getting-started/quick-start/"
-        class="list-group-item list-group-item-action active">Quick Start</a>
+        class="list-group-item list-group-item-action">Quick Start</a>
     
     <a href="/books/getting-started/building-blocks/"
         class="list-group-item list-group-item-action">Building Blocks</a>
     
     <a href="/books/getting-started/navigation/"
-        class="list-group-item list-group-item-action">Navigation</a>
+        class="list-group-item list-group-item-action active">Navigation</a>
     
     <a href="/books/getting-started/hugo-shortcodes/"
         class="list-group-item list-group-item-action">Hugo Shortcodes</a>

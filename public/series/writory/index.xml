@@ -11,21 +11,21 @@
     
     
     <item>
+      <title>Getting Started</title>
+      <link>https://writory.org/books/getting-started/</link>
+      <pubDate>Wed, 26 Feb 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://writory.org/books/getting-started/</guid>
+      <description>Quick start and concepts explained</description>
+    </item>
+    
+    <item>
       <title>Customizing Writory</title>
       <link>https://writory.org/books/customizing-writory/</link>
       <pubDate>Sun, 02 Feb 2020 00:00:00 +0000</pubDate>
       
       <guid>https://writory.org/books/customizing-writory/</guid>
       <description>Make the Writory theme truly yours</description>
-    </item>
-    
-    <item>
-      <title>Getting Started</title>
-      <link>https://writory.org/books/getting-started/</link>
-      <pubDate>Wed, 29 Jan 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://writory.org/books/getting-started/</guid>
-      <description>Quick start and concepts explained</description>
     </item>
     
     <item>

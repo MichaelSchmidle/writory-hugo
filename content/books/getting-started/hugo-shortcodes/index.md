@@ -1,5 +1,5 @@
 ---
-order: 3
+order: 4
 title: Hugo Shortcodes
 summary: Making it easy to use common GUI elements in your books
 date: 2020-01-29
