@@ -26,7 +26,7 @@ This will create the folder structure required for a Hugo website.
 
 ## 2: Download Writory Theme
 
-Assuming you are using [Git](https://git-scm.com/) for your website, switch to the themes directory of the newly created site, initialize your git repository, and add the Writory theme as submodule:
+Assuming you are using [Git](https://git-scm.com/) for your website, switch to the directory of the newly created site, initialize your git repository, and add the Writory theme as submodule:
 
 ```
 cd quickstart
@@ -44,8 +44,8 @@ Open the file ``quickstart/config.toml`` and edit or add the following lines:
 theme = "writory-hugo-theme"
 
 [taxonomies]
-author = "authors"
-series = "series"
+  author = "authors"
+  series = "series"
 ```
 
 Run the command ``hugo server`` in your ``quickstart`` directory, browse to ``http://localhost:1313/`` and you will see your bare Writory site welcoming you!
