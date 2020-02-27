@@ -56,18 +56,14 @@
             <div class="navbar-nav">
                 <a href="/"
                     class="nav-item nav-link">Home</a>
-                
-                
                 <a href="/books/"
-                    class="nav-item nav-link active">Books
-                    <span class="sr-only">(current)</span></a>
+                    class="nav-item nav-link active">Books</a>
                 
                 <a href="/series/"
                     class="nav-item nav-link">Series</a>
                 
                 <a href="/authors/"
                     class="nav-item nav-link">Authors</a>
-                
             </div>
         </div>
     </div>
@@ -78,7 +74,7 @@
     <div>
         <span class="text-white-50"><a href="/books/getting-started/">Getting Started</a> ·</span> Chapter
         1 of
-        4
+        3
     </div>
 </div>
 <div class="wy-jumbotron">
@@ -100,7 +96,7 @@
 <pre><code>hugo new site quickstart
 </code></pre><p>This will create the folder structure required for a Hugo website.</p>
 <h2 id="2-download-writory-theme">2: Download Writory Theme</h2>
-<p>Assuming you are using <a href="https://git-scm.com/">Git</a> for your website, switch to the themes directory of the newly created site, initialize your git repository, and add the Writory theme as submodule:</p>
+<p>Assuming you are using <a href="https://git-scm.com/">Git</a> for your website, switch to the directory of the newly created site, initialize your git repository, and add the Writory theme as submodule:</p>
 <pre><code>cd quickstart
 git init
 git submodule add https://github.com/MichaelSchmidle/hugo-writory-theme/ themes/writory
@@ -110,8 +106,8 @@ git submodule add https://github.com/MichaelSchmidle/hugo-writory-theme/ themes/
 <pre><code>theme = &quot;writory-hugo-theme&quot;
 
 [taxonomies]
-author = &quot;authors&quot;
-series = &quot;series&quot;
+  author = &quot;authors&quot;
+  series = &quot;series&quot;
 </code></pre><p>Run the command <code>hugo server</code> in your <code>quickstart</code> directory, browse to <code>http://localhost:1313/</code> and you will see your bare Writory site welcoming you!</p>
 <h2 id="4-add-your-first-content">4. Add Your First Content</h2>
 <p>Take advantage of the built-in archetypes. These are templates for creating Markdown files for your books, chapters, series, and authors.</p>
@@ -169,9 +165,6 @@ hugo new --kind author authors/my-first-author
     
     <a href="/books/getting-started/building-blocks/"
         class="list-group-item list-group-item-action">Building Blocks</a>
-    
-    <a href="/books/getting-started/navigation/"
-        class="list-group-item list-group-item-action">Navigation</a>
     
     <a href="/books/getting-started/hugo-shortcodes/"
         class="list-group-item list-group-item-action">Hugo Shortcodes</a>
