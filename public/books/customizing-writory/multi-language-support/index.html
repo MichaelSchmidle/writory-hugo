@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<title>Series · Writory</title>
+<title>Multi-Language Support · Writory</title>
 
 <meta name="description" content="Documentation and showcase of the Writory theme for Hugo">
 <meta name="generator" content="Hugo 0.65.3" />
@@ -32,15 +32,15 @@
 <meta name="msapplication-square150x150logo" content="/mediumtile.png" />
 <meta name="msapplication-wide310x150logo" content="/widetile.png" />
 <meta name="msapplication-square310x310logo" content="/largetile.png" />
-<meta property="og:url" content="https://writory.org/series/" />
-<meta property="og:title" content="Series · Writory" />
+<meta property="og:url" content="https://writory.org/books/customizing-writory/multi-language-support/" />
+<meta property="og:title" content="Multi-Language Support · Writory" />
     
-    
-    <meta property="og:description" content="Documentation and showcase of the Writory theme for Hugo" />
-    
-    <meta property="og:image" content="https://writory.org/writory-logo-h-og.png" />
-    <meta name="twitter:card" content="summary_large_image" />
-    
+
+<meta property="og:description" content="How to add further languages to your Writory site" />
+
+<meta property="og:image" content="https://writory.org/books/customizing-writory/mirage-upgrade.png" />
+<meta name="twitter:card" content="summary_large_image" />
+
 </head>
 
 <body>
@@ -57,10 +57,10 @@
                 <a href="/"
                     class="nav-item nav-link">Home</a>
                 <a href="/books/"
-                    class="nav-item nav-link">Books</a>
+                    class="nav-item nav-link active">Books</a>
                 
                 <a href="/series/"
-                    class="nav-item nav-link active">Series</a>
+                    class="nav-item nav-link">Series</a>
                 
                 <a href="/authors/"
                     class="nav-item nav-link">Authors</a>
@@ -71,42 +71,98 @@
 </nav>
     <main>
         
+<div class="wy-status-bar">
+    <div>
+        <span class="text-white-50"><a href="/books/customizing-writory/">Customizing Writory</a> ·</span>
+        Chapter 4 of 4
+    </div>
+</div>
 <div class="wy-jumbotron">
     <div class="container">
-        <h1>Series</h1>
-        <p>Showcasing the series feature</p>
+        <h1>Multi-Language Support</h1>
+        <p>How to add further languages to your Writory site</p>
     </div>
 </div>
-
-<div class="wy-content container pt-5">
-    <p>Just to show you how this feature works, we&rsquo;ve created a little series of books called &ldquo;Writory.&rdquo;</p>
-
-</div>
-
-
 <div class="container py-5">
     <div class="row">
-        
-        <div class="col-md-6 col-lg-4 mb-3">
-            
-<span class="wy-badge-featured">featured</span>
+        <div class="col-lg-8">
+            <div class="wy-content">
+                <h2 id="default-languages-in-writory">Default Languages in Writory</h2>
+<p>Writory currently supports two languages out of the box:</p>
+<ul>
+<li>English [en]</li>
+<li>German [de]</li>
+</ul>
+<h2 id="switching-the-default-language">Switching the Default Language</h2>
+<p>Just set the <code>defaultLanguage</code> to <code>de</code> in your site&rsquo;s configuration file, if you want to switch from English to German as your only language.</p>
+<p>Then create <code>_index.de.md</code> files in the three content directories <code>books</code>, <code>series</code>, and <code>authors</code>. To each of these, add a <code>title</code> and corresponding <code>url</code> variable in the front matter.</p>
+<p>Example for <code>books/_index.de.md</code>:</p>
+<pre><code>---
+title: Bücher
+url: buecher
+---
+</code></pre><p>This way, Hugo picks up the proper titles and URLs for Writory&rsquo;s sections and taxonomies.</p>
+<h2 id="using-multiple-languages-in-parallel">Using Multiple Languages in Parallel</h2>
+<p>For parallel use of languages, there are a few more additional steps to take:</p>
+<ul>
+<li>Configure the languages to use as per <a href="https://gohugo.io/content-management/multilingual/">Hugo&rsquo;s documentation</a>.</li>
+<li>Translate settings from your site&rsquo;s configuration, like <code>copyright</code>, <code>params.description</code>, and <code>thirdPartyReferences</code> in the respective language sections.</li>
+<li>Add the <code>_index.??.md</code> files (including the appropriate language code in the file name) in the content folders <code>books</code>, <code>series</code>, and <code>authors</code>.</li>
+</ul>
+<h2 id="adding-non-default-languages-to-writory">Adding Non-Default Languages to Writory</h2>
+<p>To add further languages beyond those provided per default, you have to provide the translations yourself. To achieve this, add the necessary translation files to the <code>i18n</code> folder of your site as per <a href="https://gohugo.io/content-management/multilingual/#translation-of-strings">Hugo&rsquo;s documentation</a>. As a template, you can use <a href="https://github.com/MichaelSchmidle/writory-hugo-theme/tree/master/i18n">Writory&rsquo;s original <code>en.yml</code> file</a>.</p>
+<p>Of course, I would be happy to add further default languages to Writory&mdash;so please, don&rsquo;t hesitate to submit your translation files to the <a href="https://github.com/MichaelSchmidle/writory-hugo-theme/">Writory repository on Github</a>!</p>
 
-<div class="shadow card">
-    
-    <img src="/series/writory/mirage-teamwork.png" alt="" class="card-img-top p-3">
-    
-    <div class="card-body">
-        <h2 class="card-title">Writory</h2>
-        <p class="card-subtitle text-muted">Series of 3 books</p>
-        <a href="/series/writory/" role="button"
-            class="wy-card-link btn-primary">List books</a>
-    </div>
-</div>
+            </div>
+            <hr>
+            <h6>Next Chapter</h6>
+            <div class="shadow card">
+                <div class="card-body">
+                    
+                    
+                    
+This story is <span class="wy-badge-success">developing</span> ·
+More chapters will follow
+
+                    
+                </div>
+            </div>
         </div>
         
-    </div>
+        <div class="col-lg d-lg-none">
+            <hr>
+        </div>
+        
+        <div class="col">
+            
+<h6>Table of Contents</h6>
+<div class="list-group">
+    <a href="/books/customizing-writory/"
+        class="list-group-item list-group-item-action">Title page</a>
+    
+    <a href="/books/customizing-writory/logo-and-logogram/"
+        class="list-group-item list-group-item-action">Logo and Logogram</a>
+    
+    <a href="/books/customizing-writory/color-schemes/"
+        class="list-group-item list-group-item-action">Color Schemes</a>
+    
+    <a href="/books/customizing-writory/metadata/"
+        class="list-group-item list-group-item-action">Metadata</a>
+    
+    <a href="/books/customizing-writory/multi-language-support/"
+        class="list-group-item list-group-item-action active">Multi-Language Support</a>
+    
 </div>
 
+<p class="text-muted mt-3">
+    
+This story is <span class="wy-badge-success">developing</span> ·
+More chapters will follow
+</p>
+
+        </div>
+    </div>
+</div>
 
     </main>
     <footer class="wy-footer">

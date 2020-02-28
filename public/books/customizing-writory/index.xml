@@ -6,10 +6,19 @@
     <description>Recent content in Customizing Writory on Writory</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>Original content released under the [MIT License](https://github.com/MichaelSchmidle/writory-hugo/blob/master/LICENSE)</copyright>
-    <lastBuildDate>Sun, 02 Feb 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 28 Feb 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://writory.org/books/customizing-writory/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Multi-Language Support</title>
+      <link>https://writory.org/books/customizing-writory/multi-language-support/</link>
+      <pubDate>Fri, 28 Feb 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://writory.org/books/customizing-writory/multi-language-support/</guid>
+      <description>How to add further languages to your Writory site</description>
+    </item>
     
     <item>
       <title>Logo and Logogram</title>

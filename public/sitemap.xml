@@ -4,18 +4,23 @@
   
   <url>
     <loc>https://writory.org/</loc>
-    <lastmod>2020-02-02T00:00:00+00:00</lastmod>
+    <lastmod>2020-02-28T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://writory.org/books/</loc>
-    <lastmod>2020-02-02T00:00:00+00:00</lastmod>
+    <lastmod>2020-02-28T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://writory.org/books/customizing-writory/</loc>
-    <lastmod>2020-02-02T00:00:00+00:00</lastmod>
+    <lastmod>2020-02-28T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://writory.org/books/customizing-writory/multi-language-support/</loc>
+    <lastmod>2020-02-28T00:00:00+00:00</lastmod>
   </url>
   
   <url>

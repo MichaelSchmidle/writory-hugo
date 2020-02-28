@@ -1,5 +1,7 @@
 baseURL: https://writory.org/
-copyright: "Original content released under the [MIT License](https://github.com/MichaelSchmidle/writory-hugo/blob/master/LICENSE)"
+copyright: Original content released under the [MIT License](https://github.com/MichaelSchmidle/writory-hugo/blob/master/LICENSE)
+defaultContentLanguageInSubdir: true
+enableMissingTranslationPlaceholders: true
 title: Writory
 theme: writory-hugo-theme
 

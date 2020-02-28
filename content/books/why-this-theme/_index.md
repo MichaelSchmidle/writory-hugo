@@ -7,7 +7,6 @@ series: Writory
 resources:
 - name: cover
   src: mirage-science.png
-featured: 3
 ended: true
 ---
 
