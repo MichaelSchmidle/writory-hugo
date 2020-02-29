@@ -14,11 +14,9 @@ resources:
 
 Example:
 
-{{<card class="mb-5">}}
 {{<figure src="https://via.placeholder.com/678x452">}}
 Image: [placeholder.com](https://placeholder.com)
 {{</figure>}}
-{{</card>}}
 
 The corresponding Shortcode in Markdown:
 
@@ -34,9 +32,7 @@ It accepts one optional attribute, ``class``. Use this attribute to override the
 
 If the ``src`` attribute points to a Page Resource, its title will be used as caption of the figure. (This can be overridden by providing a specific caption between the opening ``{{<htmlUnescape>}}{{&lt;figure&gt;}}{{</htmlUnescape>}}`` and closing ``{{<htmlUnescape>}}{{&lt;/figure&gt;}}{{</htmlUnescape>}}`` tags.) See the following example:
 
-{{<card class="mb-5">}}
 {{<figure src="orange-tabby-cat-on-white-table-3687957.jpg" />}}
-{{</card>}}
 
 The corresponding Shortcode in Markdown:
 
@@ -48,7 +44,6 @@ The corresponding Shortcode in Markdown:
 
 Examples:
 
-{{<card class="mb-5">}}
 {{<alert class="wy-alert-primary">}}This is a primary alert.{{</alert>}}
 {{<alert class="wy-alert-secondary">}}This is a secondary alert.{{</alert>}}
 {{<alert class="wy-alert-success">}}This is a success alert.{{</alert>}}
@@ -57,7 +52,6 @@ Examples:
 {{<alert class="wy-alert-info">}}This is an info alert.{{</alert>}}
 {{<alert class="wy-alert-light">}}This is a light alert.{{</alert>}}
 {{<alert class="wy-alert-dark mb-5">}}This is a dark alert.{{</alert>}}
-{{</card>}}
 
 The corresponding Shortcodes in Markdown:
 
@@ -74,31 +68,29 @@ The corresponding Shortcodes in Markdown:
 
 It accepts one optional attribute, ``class``. Use this attribute to style the alert with the above Writory classes—or with combinations of [Bootstrap Alerts classes](https://getbootstrap.com/docs/4.4/components/alerts/) and/or [Bootstrap Utilities classes](https://getbootstrap.com/docs/4.4/utilities/borders/).
 
-## Blockquote
+## Cite
 
 Example:
 
-{{<card class="mb-5">}}
-{{<blockquote class="">}}This is a blockquote.{{</blockquote>}}
-{{</card>}}
+> This is a famous blockquote
+{{<cite adapted="true">}}This is the cite{{</cite>}}
 
 The corresponding Shortcode in Markdown:
 
 ```
-{{<htmlUnescape>}}{{&lt;blockquote class=&quot;&quot;&gt;}}This is a blockquote.{{&lt;/blockquote&gt;}}{{</htmlUnescape>}}
+{{<htmlUnescape>}}&gt; This is a blockquote
+{{&lt;cite adapted=&quot;true&quot;&gt;}}This is the cite{{&lt;/cite&gt;}}{{</htmlUnescape>}}
 ```
 
-It accepts one optional attribute, ``class``. Use this attribute to override the Writory style of the blockquote with combinations of [Bootstrap Utilities classes](https://getbootstrap.com/docs/4.4/utilities/borders/).
+It accepts one optional attribute, ``adapted``. Set this attribute to ``true`` to signal that you have adapted the original quote.
 
 ## Card
 
 Example:
 
-{{<card class="mb-5">}}
 {{<card class="shadow mb-5" markdownify="true">}}
 ### Example Card
 This is a small example of a card.
-{{</card>}}
 {{</card>}}
 
 The corresponding Shortcode in Markdown:
@@ -120,11 +112,9 @@ Define with the boolean ``markdownify`` attribute whether the card's content sho
 
 Examples:
 
-{{<card class="mb-5">}}
 {{<link-button href="/books/" class="btn-primary">}}List books{{</link-button>}}
 {{<link-button href="/books/" class="btn-secondary">}}List books{{</link-button>}}
 {{<link-button href="/books/" class="btn-outline-info">}}List books{{</link-button>}}
-{{</card>}}
 
 The corresponding Shortcodes in Markdown:
 
