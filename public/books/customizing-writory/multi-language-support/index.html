@@ -94,7 +94,7 @@
 <li>German [de]</li>
 </ul>
 <h2 id="switching-the-default-language">Switching the Default Language</h2>
-<p>Just set the <code>defaultLanguage</code> to <code>de</code> in your site&rsquo;s configuration file, if you want to switch from English to German as your only language.</p>
+<p>Hugo defaults to English as primary language. Just set the <code>defaultLanguage</code> to <code>de</code> in your site&rsquo;s configuration file, if you want to switch from English to German as your only language.</p>
 <p>Then create <code>_index.de.md</code> files in the three content directories <code>books</code>, <code>series</code>, and <code>authors</code>. To each of these, add a <code>title</code> and corresponding <code>url</code> variable in the front matter.</p>
 <p>Example for <code>books/_index.de.md</code>:</p>
 <pre><code>---
@@ -102,16 +102,25 @@ title: Bücher
 url: buecher
 ---
 </code></pre><p>This way, Hugo picks up the proper titles and URLs for Writory&rsquo;s sections and taxonomies.</p>
+<div class="alert wy-alert-warning my-5" role="alert">
+    <h5 id="warning">Warning</h5>
+<p>You might be tempted to define localized taxonomies in your site configuration (for example, using the German <code>autor: autoren</code> instead of the English <code>author: authors</code>). <strong>Be careful with that.</strong></p>
+<p>Writory uses the English section <code>books</code> as well as the English taxonomies <code>authors</code> and <code>series</code> to build the navigation and localize the navigation via front matter in your content files.</p>
+
+</div>
 <h2 id="using-multiple-languages-in-parallel">Using Multiple Languages in Parallel</h2>
 <p>For parallel use of languages, there are a few more additional steps to take:</p>
 <ul>
 <li>Configure the languages to use as per <a href="https://gohugo.io/content-management/multilingual/">Hugo&rsquo;s documentation</a>.</li>
 <li>Translate settings from your site&rsquo;s configuration, like <code>copyright</code>, <code>params.description</code>, and <code>thirdPartyReferences</code> in the respective language sections.</li>
-<li>Add the <code>_index.??.md</code> files (including the appropriate language code in the file name) in the content folders <code>books</code>, <code>series</code>, and <code>authors</code>.</li>
+<li>As explained above, add the <code>_index.??.md</code> files (including the appropriate language code in the file name) in the content folders <code>books</code>, <code>series</code>, and <code>authors</code>.</li>
 </ul>
 <h2 id="adding-non-default-languages-to-writory">Adding Non-Default Languages to Writory</h2>
 <p>To add further languages beyond those provided per default, you have to provide the translations yourself. To achieve this, add the necessary translation files to the <code>i18n</code> folder of your site as per <a href="https://gohugo.io/content-management/multilingual/#translation-of-strings">Hugo&rsquo;s documentation</a>. As a template, you can use <a href="https://github.com/MichaelSchmidle/writory-hugo-theme/tree/master/i18n">Writory&rsquo;s original <code>en.yml</code> file</a>.</p>
-<p>Of course, I would be happy to add further default languages to Writory&mdash;so please, don&rsquo;t hesitate to submit your translation files to the <a href="https://github.com/MichaelSchmidle/writory-hugo-theme/">Writory repository on Github</a>!</p>
+<div class="alert wy-alert-primary mt-5" role="alert">
+    <h5 id="please-contribute">Please Contribute!</h5>
+<p>Of course, I would be happy to add further default languages to Writory&mdash;so please, don&rsquo;t hesitate to submit your translation files to the <a href="https://github.com/MichaelSchmidle/writory-hugo-theme/">Writory repository on GitHub</a>!
+</div>
 
             </div>
             <hr>
@@ -138,7 +147,7 @@ More chapters will follow
 <h6>Table of Contents</h6>
 <div class="list-group">
     <a href="/books/customizing-writory/"
-        class="list-group-item list-group-item-action">Title page</a>
+        class="list-group-item list-group-item-action">Title Page</a>
     
     <a href="/books/customizing-writory/logo-and-logogram/"
         class="list-group-item list-group-item-action">Logo and Logogram</a>

@@ -17,6 +17,8 @@ If configured, Writory takes your logo and logogram and displays them in a few p
 * The **logo** is shown on the home page.
 * The **logogram** is shown in the navigation bar and footer.
 
+Examples:
+
 {{<figure src="/writory-logo-h.png">}}
 Writory's logo
 {{</figure>}}
@@ -25,7 +27,7 @@ Writory's logo
 Writory's logogram
 {{</figure>}}
 
-## Configure Logo
+## Configure Your Logo
 
 Define the parameter ``logo`` inside the ``params`` setion of your site's configuration file.
 
@@ -38,7 +40,7 @@ params:
 
 Hugo will look for this logo file inside the ``static`` folder of your site. Once configured, your logo will be shown on the home page of your site (instead of the textual name of your site).
 
-## Configure Logogram
+## Configure Your Logogram
 
 Define the parameter ``logogram`` inside the ``params`` section of your site's configuration file.
 

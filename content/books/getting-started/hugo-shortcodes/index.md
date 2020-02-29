@@ -1,5 +1,5 @@
 ---
-order: 4
+order: 3
 title: Hugo Shortcodes
 summary: Making it easy to use common GUI elements in your books
 date: 2020-01-29
@@ -94,9 +94,11 @@ It accepts one optional attribute, ``class``. Use this attribute to override the
 
 Example:
 
+{{<card class="mb-5">}}
 {{<card class="shadow mb-5" markdownify="true">}}
 ### Example Card
 This is a small example of a card.
+{{</card>}}
 {{</card>}}
 
 The corresponding Shortcode in Markdown:

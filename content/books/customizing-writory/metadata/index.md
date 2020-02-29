@@ -52,6 +52,12 @@ If necessary, these third party references can be customized via the configurati
 ##### Warning
 
 Remember to **remove the illustrations** from your site if you decide to omit the reference to Icons8. They only may be used with the attribution.
+
+They are used in the following layouts:
+
+* ``404.html``
+* ``index.html``
+* ``partials/emptry-list.html``
 {{</alert>}}
 
 Example of the ``config.yml`` file of this site:

@@ -34,7 +34,7 @@ git init
 git submodule add https://github.com/MichaelSchmidle/hugo-writory-theme/ themes/writory
 ```
 
-If you don't want to use Git, you also can download the latest release of the Writory theme from [Github](https://github.com/MichaelSchmidle/writory-hugo-theme/releases/). Extract the contents of the archive into the ``themes`` folder of your newly created Hugo site.
+If you don't want to use Git, you also can download the latest release of the Writory theme from [GitHub](https://github.com/MichaelSchmidle/writory-hugo-theme/releases/). Extract the contents of the archive into the ``themes`` folder of your newly created Hugo site.
 
 ## 3: Configure Hugo to Use the Writory Theme
 

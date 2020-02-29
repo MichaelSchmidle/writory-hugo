@@ -13,4 +13,4 @@ ended: false
 
 ## About This Book
 
-The Writory theme has a few configuration options available. Check out the [branding options](logo-and-logogram/), [four color schemes](color-schemes/) and [metadata options](metadata/) offered by Writory.
+The Writory theme has a few configuration options available. Check out the [branding options](logo-and-logogram/), [four color schemes](color-schemes/), [metadata options](metadata/), and [multi-language support](multi-language-support/) offered by Writory.
