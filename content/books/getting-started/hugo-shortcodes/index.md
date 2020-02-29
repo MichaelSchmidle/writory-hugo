@@ -14,14 +14,14 @@ resources:
 
 Example:
 
-{{<figure src="https://via.placeholder.com/678x452">}}
+{{<figure src="https://via.placeholder.com/720x480">}}
 Image: [placeholder.com](https://placeholder.com)
 {{</figure>}}
 
 The corresponding Shortcode in Markdown:
 
 ```
-{{<htmlUnescape>}}{{&lt;figure src=&quot;https://via.placeholder.com/678x452&quot;&gt;}}
+{{<htmlUnescape>}}{{&lt;figure src=&quot;https://via.placeholder.com/720x480&quot;&gt;}}
 Image: [placeholder.com](https://placeholder.com)
 {{&lt;/figure&gt;}}{{</htmlUnescape>}}
 ```
@@ -78,7 +78,7 @@ Example:
 The corresponding Shortcode in Markdown:
 
 ```
-{{<htmlUnescape>}}&gt; This is a blockquote
+{{<htmlUnescape>}}&gt; This is a famous blockquote
 {{&lt;cite adapted=&quot;true&quot;&gt;}}This is the cite{{&lt;/cite&gt;}}{{</htmlUnescape>}}
 ```
 
