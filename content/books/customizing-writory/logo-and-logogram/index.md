@@ -19,11 +19,11 @@ If configured, Writory takes your logo and logogram and displays them in a few p
 
 Examples:
 
-{{<figure src="/writory-logo-h.png">}}
+{{<figure src="writory-logo-h.png">}}
 Writory's logo
 {{</figure>}}
 
-{{<figure src="/writory-logogram.png" class="w-25">}}
+{{<figure src="writory-logogram.png" class="w-25">}}
 Writory's logogram
 {{</figure>}}
 

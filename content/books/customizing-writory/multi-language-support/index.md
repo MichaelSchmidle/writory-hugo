@@ -1,5 +1,5 @@
 ---
-order: 4
+order: 5
 title: Multi-Language Support
 summary: How to add further languages to your Writory site
 date: 2020-02-28
@@ -10,49 +10,68 @@ resources:
 
 ## Default Languages in Writory
 
-Writory currently supports two languages out of the box:
+Writory currently supports two languages out of the box: English and German.
 
-* English [en]
-* German [de]
+The navigation is [localized](https://github.com/MichaelSchmidle/writory-hugo-theme/tree/master/i18n) according to the following table:
+
+| Language, code  | Name, URL of books section | Name, URL of series taxonomy | Name, URL of authors taxonomy |
+|-----------------|----------------------------|------------------------------|-------------------------------|
+| English, ``en`` | Books, ``books``           | Series, ``series``           | Authors, ``authors``          |
+| German, ``de``  | Bücher, ``buecher``        | Serien, ``serien``           | Autoren, ``autoren``          |
 
 ## Switching the Default Language
 
-Hugo defaults to English as primary language. Just set the ``defaultLanguage`` to ``de`` in your site's configuration file, if you want to switch from English to German as your only language.
+Hugo defaults to English as primary language. If you want to switch from English to another language as your only language, follow these steps:
 
-Then create ``_index.de.md`` files in the three content directories ``books``, ``series``, and ``authors``. To each of these, add a ``title`` and corresponding ``url`` variable in the front matter.
+1. Change your site's ``defaultContentLanguage``
+2. Update your site's taxonomies
 
-Example for ``books/_index.de.md``:
+The first step is done easily by adding one line to your configuration file. Here's an example of a ``config.yml`` file setting German as default content language:
 
 ```
----
-title: Bücher
-url: buecher
----
+defaultContentLanguage: de
 ```
 
-This way, Hugo picks up the proper titles and URLs for Writory's sections and taxonomies.
+The second party involves slightly more changes. Begin by translating the English taxonomies ``series: series`` and ``author: authors`` according to the translation table above. For German, a ``config.yml`` file would look like this:
 
-{{<alert class="wy-alert-warning my-5">}}
-##### Warning
+```
+taxonomies:
+    serie: serien
+    autor: autoren
+```
 
-You might be tempted to define localized taxonomies in your site configuration (for example, using the German ``autor: autoren`` instead of the English ``author: authors``). **Be careful with that.**
+Then create your content in the proper subfolders of your content folder. For example, to publish books in German, put your content into the subfolders ``buecher``, ``serien`` and ``autoren``. Remember to use these directories when creating new content via archetypes:
 
-Writory uses the English section ``books`` as well as the English taxonomies ``authors`` and ``series`` to build the navigation and localize the navigation via front matter in your content files.
+```
+hugo new --kind book buecher/mein-erstes-buch
+hugo new --kind chapter buecher/mein-erstes-buch/mein-erstes-kapitel
+hugo new --kind series serien/meine-erste-serie
+hugo new --kind author autoren/mein-erster-autor
+```
+
+{{<alert class="wy-alert-warning mt-5">}}
+##### Caution
+
+When using localized content, make sure to define the appropriate ``type`` of your content in the respective files' front matter. That's the only way for Hugo to recognize that content inside a (for example) German ``buecher`` folder should be treated as books and chapters.
+
+Writory's archetypes automatically add the proper ``type``.
 {{</alert>}}
 
 ## Using Multiple Languages in Parallel
 
 For parallel use of languages, there are a few more additional steps to take:
 
-* Configure the languages to use as per [Hugo's documentation](https://gohugo.io/content-management/multilingual/).
-* Translate settings from your site's configuration, like ``copyright``, ``params.description``, and ``thirdPartyReferences`` in the respective language sections.
-* As explained above, add the ``_index.??.md`` files (including the appropriate language code in the file name) in the content folders ``books``, ``series``, and ``authors``.
+1. Configure the languages to use as per [Hugo's documentation](https://gohugo.io/content-management/multilingual/).
+2. Translate settings from your site's configuration, like ``copyright``, ``params.description``, and ``thirdPartyReferences`` in the respective language sections.
+3. As explained above, add the localized content in their respective content folders. Make sure that folder names, taxonomy names and translations match.
+4. Add the language code to all non-default language files. Example: If English is not your default language, name your content files ``_index.en.md`` or ``index.en.md``.
 
 ## Adding Non-Default Languages to Writory
 
 To add further languages beyond those provided per default, you have to provide the translations yourself. To achieve this, add the necessary translation files to the ``i18n`` folder of your site as per [Hugo's documentation](https://gohugo.io/content-management/multilingual/#translation-of-strings). As a template, you can use [Writory's original ``en.yml`` file](https://github.com/MichaelSchmidle/writory-hugo-theme/tree/master/i18n).
 
 {{<alert class="wy-alert-primary mt-5">}}
-##### Please Contribute!
+##### Please Contribute
+
 Of course, I would be happy to add further default languages to Writory---so please, don't hesitate to submit your translation files to the [Writory repository on GitHub](https://github.com/MichaelSchmidle/writory-hugo-theme/)!
 {{</alert>}}

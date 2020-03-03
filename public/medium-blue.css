@@ -1783,11 +1783,11 @@ pre code {
   border: 0;
 }
 
-.table-striped tbody tr:nth-of-type(odd) {
+.table-striped tbody tr:nth-of-type(odd), .wy-content table tbody tr:nth-of-type(odd), .wy-alert-primary table tbody tr:nth-of-type(odd), .wy-alert-secondary table tbody tr:nth-of-type(odd), .wy-alert-success table tbody tr:nth-of-type(odd), .wy-alert-danger table tbody tr:nth-of-type(odd), .wy-alert-warning table tbody tr:nth-of-type(odd), .wy-alert-info table tbody tr:nth-of-type(odd), .wy-alert-light table tbody tr:nth-of-type(odd), .wy-alert-dark table tbody tr:nth-of-type(odd) {
   background-color: rgba(10, 11, 12, 0.05);
 }
 
-.table-hover tbody tr:hover {
+.table-hover tbody tr:hover, .wy-content table tbody tr:hover, .wy-alert-primary table tbody tr:hover, .wy-alert-secondary table tbody tr:hover, .wy-alert-success table tbody tr:hover, .wy-alert-danger table tbody tr:hover, .wy-alert-warning table tbody tr:hover, .wy-alert-info table tbody tr:hover, .wy-alert-light table tbody tr:hover, .wy-alert-dark table tbody tr:hover {
   color: #171b1e;
   background-color: rgba(10, 11, 12, 0.075);
 }
@@ -1804,11 +1804,20 @@ pre code {
   border-color: #6fa2ce;
 }
 
-.table-hover .table-primary:hover {
+.table-hover .table-primary:hover, .wy-content table .table-primary:hover, .wy-alert-primary table .table-primary:hover, .wy-alert-secondary table .table-primary:hover, .wy-alert-success table .table-primary:hover, .wy-alert-danger table .table-primary:hover, .wy-alert-warning table .table-primary:hover, .wy-alert-info table .table-primary:hover, .wy-alert-light table .table-primary:hover, .wy-alert-dark table .table-primary:hover {
   background-color: #95b7d5;
 }
-.table-hover .table-primary:hover > td,
-.table-hover .table-primary:hover > th {
+.table-hover .table-primary:hover > td, .wy-content table .table-primary:hover > td, .wy-alert-primary table .table-primary:hover > td, .wy-alert-secondary table .table-primary:hover > td, .wy-alert-success table .table-primary:hover > td, .wy-alert-danger table .table-primary:hover > td, .wy-alert-warning table .table-primary:hover > td, .wy-alert-info table .table-primary:hover > td, .wy-alert-light table .table-primary:hover > td, .wy-alert-dark table .table-primary:hover > td,
+.table-hover .table-primary:hover > th,
+.wy-content table .table-primary:hover > th,
+.wy-alert-primary table .table-primary:hover > th,
+.wy-alert-secondary table .table-primary:hover > th,
+.wy-alert-success table .table-primary:hover > th,
+.wy-alert-danger table .table-primary:hover > th,
+.wy-alert-warning table .table-primary:hover > th,
+.wy-alert-info table .table-primary:hover > th,
+.wy-alert-light table .table-primary:hover > th,
+.wy-alert-dark table .table-primary:hover > th {
   background-color: #95b7d5;
 }
 
@@ -1824,11 +1833,20 @@ pre code {
   border-color: #91979c;
 }
 
-.table-hover .table-secondary:hover {
+.table-hover .table-secondary:hover, .wy-content table .table-secondary:hover, .wy-alert-primary table .table-secondary:hover, .wy-alert-secondary table .table-secondary:hover, .wy-alert-success table .table-secondary:hover, .wy-alert-danger table .table-secondary:hover, .wy-alert-warning table .table-secondary:hover, .wy-alert-info table .table-secondary:hover, .wy-alert-light table .table-secondary:hover, .wy-alert-dark table .table-secondary:hover {
   background-color: #abb0b6;
 }
-.table-hover .table-secondary:hover > td,
-.table-hover .table-secondary:hover > th {
+.table-hover .table-secondary:hover > td, .wy-content table .table-secondary:hover > td, .wy-alert-primary table .table-secondary:hover > td, .wy-alert-secondary table .table-secondary:hover > td, .wy-alert-success table .table-secondary:hover > td, .wy-alert-danger table .table-secondary:hover > td, .wy-alert-warning table .table-secondary:hover > td, .wy-alert-info table .table-secondary:hover > td, .wy-alert-light table .table-secondary:hover > td, .wy-alert-dark table .table-secondary:hover > td,
+.table-hover .table-secondary:hover > th,
+.wy-content table .table-secondary:hover > th,
+.wy-alert-primary table .table-secondary:hover > th,
+.wy-alert-secondary table .table-secondary:hover > th,
+.wy-alert-success table .table-secondary:hover > th,
+.wy-alert-danger table .table-secondary:hover > th,
+.wy-alert-warning table .table-secondary:hover > th,
+.wy-alert-info table .table-secondary:hover > th,
+.wy-alert-light table .table-secondary:hover > th,
+.wy-alert-dark table .table-secondary:hover > th {
   background-color: #abb0b6;
 }
 
@@ -1844,11 +1862,20 @@ pre code {
   border-color: #dbe972;
 }
 
-.table-hover .table-success:hover {
+.table-hover .table-success:hover, .wy-content table .table-success:hover, .wy-alert-primary table .table-success:hover, .wy-alert-secondary table .table-success:hover, .wy-alert-success table .table-success:hover, .wy-alert-danger table .table-success:hover, .wy-alert-warning table .table-success:hover, .wy-alert-info table .table-success:hover, .wy-alert-light table .table-success:hover, .wy-alert-dark table .table-success:hover {
   background-color: #dae597;
 }
-.table-hover .table-success:hover > td,
-.table-hover .table-success:hover > th {
+.table-hover .table-success:hover > td, .wy-content table .table-success:hover > td, .wy-alert-primary table .table-success:hover > td, .wy-alert-secondary table .table-success:hover > td, .wy-alert-success table .table-success:hover > td, .wy-alert-danger table .table-success:hover > td, .wy-alert-warning table .table-success:hover > td, .wy-alert-info table .table-success:hover > td, .wy-alert-light table .table-success:hover > td, .wy-alert-dark table .table-success:hover > td,
+.table-hover .table-success:hover > th,
+.wy-content table .table-success:hover > th,
+.wy-alert-primary table .table-success:hover > th,
+.wy-alert-secondary table .table-success:hover > th,
+.wy-alert-success table .table-success:hover > th,
+.wy-alert-danger table .table-success:hover > th,
+.wy-alert-warning table .table-success:hover > th,
+.wy-alert-info table .table-success:hover > th,
+.wy-alert-light table .table-success:hover > th,
+.wy-alert-dark table .table-success:hover > th {
   background-color: #dae597;
 }
 
@@ -1864,11 +1891,20 @@ pre code {
   border-color: #6fd3c9;
 }
 
-.table-hover .table-info:hover {
+.table-hover .table-info:hover, .wy-content table .table-info:hover, .wy-alert-primary table .table-info:hover, .wy-alert-secondary table .table-info:hover, .wy-alert-success table .table-info:hover, .wy-alert-danger table .table-info:hover, .wy-alert-warning table .table-info:hover, .wy-alert-info table .table-info:hover, .wy-alert-light table .table-info:hover, .wy-alert-dark table .table-info:hover {
   background-color: #95d6d2;
 }
-.table-hover .table-info:hover > td,
-.table-hover .table-info:hover > th {
+.table-hover .table-info:hover > td, .wy-content table .table-info:hover > td, .wy-alert-primary table .table-info:hover > td, .wy-alert-secondary table .table-info:hover > td, .wy-alert-success table .table-info:hover > td, .wy-alert-danger table .table-info:hover > td, .wy-alert-warning table .table-info:hover > td, .wy-alert-info table .table-info:hover > td, .wy-alert-light table .table-info:hover > td, .wy-alert-dark table .table-info:hover > td,
+.table-hover .table-info:hover > th,
+.wy-content table .table-info:hover > th,
+.wy-alert-primary table .table-info:hover > th,
+.wy-alert-secondary table .table-info:hover > th,
+.wy-alert-success table .table-info:hover > th,
+.wy-alert-danger table .table-info:hover > th,
+.wy-alert-warning table .table-info:hover > th,
+.wy-alert-info table .table-info:hover > th,
+.wy-alert-light table .table-info:hover > th,
+.wy-alert-dark table .table-info:hover > th {
   background-color: #95d6d2;
 }
 
@@ -1884,11 +1920,20 @@ pre code {
   border-color: #f3dc72;
 }
 
-.table-hover .table-warning:hover {
+.table-hover .table-warning:hover, .wy-content table .table-warning:hover, .wy-alert-primary table .table-warning:hover, .wy-alert-secondary table .table-warning:hover, .wy-alert-success table .table-warning:hover, .wy-alert-danger table .table-warning:hover, .wy-alert-warning table .table-warning:hover, .wy-alert-info table .table-warning:hover, .wy-alert-light table .table-warning:hover, .wy-alert-dark table .table-warning:hover {
   background-color: #eadb96;
 }
-.table-hover .table-warning:hover > td,
-.table-hover .table-warning:hover > th {
+.table-hover .table-warning:hover > td, .wy-content table .table-warning:hover > td, .wy-alert-primary table .table-warning:hover > td, .wy-alert-secondary table .table-warning:hover > td, .wy-alert-success table .table-warning:hover > td, .wy-alert-danger table .table-warning:hover > td, .wy-alert-warning table .table-warning:hover > td, .wy-alert-info table .table-warning:hover > td, .wy-alert-light table .table-warning:hover > td, .wy-alert-dark table .table-warning:hover > td,
+.table-hover .table-warning:hover > th,
+.wy-content table .table-warning:hover > th,
+.wy-alert-primary table .table-warning:hover > th,
+.wy-alert-secondary table .table-warning:hover > th,
+.wy-alert-success table .table-warning:hover > th,
+.wy-alert-danger table .table-warning:hover > th,
+.wy-alert-warning table .table-warning:hover > th,
+.wy-alert-info table .table-warning:hover > th,
+.wy-alert-light table .table-warning:hover > th,
+.wy-alert-dark table .table-warning:hover > th {
   background-color: #eadb96;
 }
 
@@ -1904,11 +1949,20 @@ pre code {
   border-color: #f39772;
 }
 
-.table-hover .table-danger:hover {
+.table-hover .table-danger:hover, .wy-content table .table-danger:hover, .wy-alert-primary table .table-danger:hover, .wy-alert-secondary table .table-danger:hover, .wy-alert-success table .table-danger:hover, .wy-alert-danger table .table-danger:hover, .wy-alert-warning table .table-danger:hover, .wy-alert-info table .table-danger:hover, .wy-alert-light table .table-danger:hover, .wy-alert-dark table .table-danger:hover {
   background-color: #eaac96;
 }
-.table-hover .table-danger:hover > td,
-.table-hover .table-danger:hover > th {
+.table-hover .table-danger:hover > td, .wy-content table .table-danger:hover > td, .wy-alert-primary table .table-danger:hover > td, .wy-alert-secondary table .table-danger:hover > td, .wy-alert-success table .table-danger:hover > td, .wy-alert-danger table .table-danger:hover > td, .wy-alert-warning table .table-danger:hover > td, .wy-alert-info table .table-danger:hover > td, .wy-alert-light table .table-danger:hover > td, .wy-alert-dark table .table-danger:hover > td,
+.table-hover .table-danger:hover > th,
+.wy-content table .table-danger:hover > th,
+.wy-alert-primary table .table-danger:hover > th,
+.wy-alert-secondary table .table-danger:hover > th,
+.wy-alert-success table .table-danger:hover > th,
+.wy-alert-danger table .table-danger:hover > th,
+.wy-alert-warning table .table-danger:hover > th,
+.wy-alert-info table .table-danger:hover > th,
+.wy-alert-light table .table-danger:hover > th,
+.wy-alert-dark table .table-danger:hover > th {
   background-color: #eaac96;
 }
 
@@ -1924,11 +1978,20 @@ pre code {
   border-color: #d7dbdf;
 }
 
-.table-hover .table-light:hover {
+.table-hover .table-light:hover, .wy-content table .table-light:hover, .wy-alert-primary table .table-light:hover, .wy-alert-secondary table .table-light:hover, .wy-alert-success table .table-light:hover, .wy-alert-danger table .table-light:hover, .wy-alert-warning table .table-light:hover, .wy-alert-info table .table-light:hover, .wy-alert-light table .table-light:hover, .wy-alert-dark table .table-light:hover {
   background-color: #d1d5db;
 }
-.table-hover .table-light:hover > td,
-.table-hover .table-light:hover > th {
+.table-hover .table-light:hover > td, .wy-content table .table-light:hover > td, .wy-alert-primary table .table-light:hover > td, .wy-alert-secondary table .table-light:hover > td, .wy-alert-success table .table-light:hover > td, .wy-alert-danger table .table-light:hover > td, .wy-alert-warning table .table-light:hover > td, .wy-alert-info table .table-light:hover > td, .wy-alert-light table .table-light:hover > td, .wy-alert-dark table .table-light:hover > td,
+.table-hover .table-light:hover > th,
+.wy-content table .table-light:hover > th,
+.wy-alert-primary table .table-light:hover > th,
+.wy-alert-secondary table .table-light:hover > th,
+.wy-alert-success table .table-light:hover > th,
+.wy-alert-danger table .table-light:hover > th,
+.wy-alert-warning table .table-light:hover > th,
+.wy-alert-info table .table-light:hover > th,
+.wy-alert-light table .table-light:hover > th,
+.wy-alert-dark table .table-light:hover > th {
   background-color: #d1d5db;
 }
 
@@ -1944,11 +2007,20 @@ pre code {
   border-color: #83868a;
 }
 
-.table-hover .table-dark:hover {
+.table-hover .table-dark:hover, .wy-content table .table-dark:hover, .wy-alert-primary table .table-dark:hover, .wy-alert-secondary table .table-dark:hover, .wy-alert-success table .table-dark:hover, .wy-alert-danger table .table-dark:hover, .wy-alert-warning table .table-dark:hover, .wy-alert-info table .table-dark:hover, .wy-alert-light table .table-dark:hover, .wy-alert-dark table .table-dark:hover {
   background-color: #a4a7ac;
 }
-.table-hover .table-dark:hover > td,
-.table-hover .table-dark:hover > th {
+.table-hover .table-dark:hover > td, .wy-content table .table-dark:hover > td, .wy-alert-primary table .table-dark:hover > td, .wy-alert-secondary table .table-dark:hover > td, .wy-alert-success table .table-dark:hover > td, .wy-alert-danger table .table-dark:hover > td, .wy-alert-warning table .table-dark:hover > td, .wy-alert-info table .table-dark:hover > td, .wy-alert-light table .table-dark:hover > td, .wy-alert-dark table .table-dark:hover > td,
+.table-hover .table-dark:hover > th,
+.wy-content table .table-dark:hover > th,
+.wy-alert-primary table .table-dark:hover > th,
+.wy-alert-secondary table .table-dark:hover > th,
+.wy-alert-success table .table-dark:hover > th,
+.wy-alert-danger table .table-dark:hover > th,
+.wy-alert-warning table .table-dark:hover > th,
+.wy-alert-info table .table-dark:hover > th,
+.wy-alert-light table .table-dark:hover > th,
+.wy-alert-dark table .table-dark:hover > th {
   background-color: #a4a7ac;
 }
 
@@ -1958,11 +2030,20 @@ pre code {
   background-color: rgba(10, 11, 12, 0.075);
 }
 
-.table-hover .table-active:hover {
+.table-hover .table-active:hover, .wy-content table .table-active:hover, .wy-alert-primary table .table-active:hover, .wy-alert-secondary table .table-active:hover, .wy-alert-success table .table-active:hover, .wy-alert-danger table .table-active:hover, .wy-alert-warning table .table-active:hover, .wy-alert-info table .table-active:hover, .wy-alert-light table .table-active:hover, .wy-alert-dark table .table-active:hover {
   background-color: rgba(0, 0, 0, 0.075);
 }
-.table-hover .table-active:hover > td,
-.table-hover .table-active:hover > th {
+.table-hover .table-active:hover > td, .wy-content table .table-active:hover > td, .wy-alert-primary table .table-active:hover > td, .wy-alert-secondary table .table-active:hover > td, .wy-alert-success table .table-active:hover > td, .wy-alert-danger table .table-active:hover > td, .wy-alert-warning table .table-active:hover > td, .wy-alert-info table .table-active:hover > td, .wy-alert-light table .table-active:hover > td, .wy-alert-dark table .table-active:hover > td,
+.table-hover .table-active:hover > th,
+.wy-content table .table-active:hover > th,
+.wy-alert-primary table .table-active:hover > th,
+.wy-alert-secondary table .table-active:hover > th,
+.wy-alert-success table .table-active:hover > th,
+.wy-alert-danger table .table-active:hover > th,
+.wy-alert-warning table .table-active:hover > th,
+.wy-alert-info table .table-active:hover > th,
+.wy-alert-light table .table-active:hover > th,
+.wy-alert-dark table .table-active:hover > th {
   background-color: rgba(0, 0, 0, 0.075);
 }
 
@@ -1989,10 +2070,10 @@ pre code {
 .table-dark.table-bordered {
   border: 0;
 }
-.table-dark.table-striped tbody tr:nth-of-type(odd) {
+.table-dark.table-striped tbody tr:nth-of-type(odd), .wy-content table.table-dark tbody tr:nth-of-type(odd), .wy-alert-primary table.table-dark tbody tr:nth-of-type(odd), .wy-alert-secondary table.table-dark tbody tr:nth-of-type(odd), .wy-alert-success table.table-dark tbody tr:nth-of-type(odd), .wy-alert-danger table.table-dark tbody tr:nth-of-type(odd), .wy-alert-warning table.table-dark tbody tr:nth-of-type(odd), .wy-alert-info table.table-dark tbody tr:nth-of-type(odd), .wy-alert-light table.table-dark tbody tr:nth-of-type(odd), .wy-alert-dark table.table-dark tbody tr:nth-of-type(odd) {
   background-color: rgba(232, 234, 237, 0.05);
 }
-.table-dark.table-hover tbody tr:hover {
+.table-dark.table-hover tbody tr:hover, .wy-content table.table-dark tbody tr:hover, .wy-alert-primary table.table-dark tbody tr:hover, .wy-alert-secondary table.table-dark tbody tr:hover, .wy-alert-success table.table-dark tbody tr:hover, .wy-alert-danger table.table-dark tbody tr:hover, .wy-alert-warning table.table-dark tbody tr:hover, .wy-alert-info table.table-dark tbody tr:hover, .wy-alert-light table.table-dark tbody tr:hover, .wy-alert-dark table.table-dark tbody tr:hover {
   color: #e8eaed;
   background-color: rgba(232, 234, 237, 0.075);
 }

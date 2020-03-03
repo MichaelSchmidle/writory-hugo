@@ -17,5 +17,5 @@ params:
   ]
 
 taxonomies:
-  author: authors
-  series: series
+  autor: autoren
+  serie: serien
