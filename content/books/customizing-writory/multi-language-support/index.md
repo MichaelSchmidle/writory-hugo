@@ -52,9 +52,13 @@ hugo new --kind author autoren/mein-erster-autor
 {{<alert class="wy-alert-warning mt-5">}}
 ##### Caution
 
-When using localized content, make sure to define the appropriate ``type`` of your content in the respective files' front matter. That's the only way for Hugo to recognize that content inside a (for example) German ``buecher`` folder should be treated as books and chapters.
+Make sure that Hugo can properly map your content. This requires an ``_index.md`` file in each localized folder that defines the appropriate ``type`` in the front matter. If you want to use German content, for example:
 
-Writory's archetypes automatically add the proper ``type``.
+* ``/content/buecher/_index.md`` defines ``type: books`` and ``title: Bücher``
+* ``/content/series/_index.md`` defines ``type: series`` and ``title: Serien``
+* ``/content/autoren/_index.md`` defines ``type: authors`` and ``title: Autoren``
+
+(You can put the ``type`` declaration inside a ``cascade`` block to [automatically apply the type](https://gohugo.io/content-management/front-matter/#front-matter-cascade) to all the content inside the respective directory.)
 {{</alert>}}
 
 ## Using Multiple Languages in Parallel
