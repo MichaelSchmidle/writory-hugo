@@ -65,9 +65,7 @@ This will create the file ``content/books/my-first-book/_index.md`` ready for yo
 ```
 layout: toc
 title: My First Book
-authors: []
 summary: ""
-series: ""
 resources:
 - name: cover
   src: ""
@@ -76,7 +74,9 @@ ended: false
 draft: true
 ```
 
-Complete it to your liking. Then add chapters, series and authors by running the following commands in your terminal:
+Complete it to your liking. Add the corresponding ``authors: []`` and ``series: ""`` (depending on your default content language and the taxonomies configured in [step 3](#3-configure-hugo-to-use-the-writory-theme)).
+
+Then add chapters, series and authors by running the following commands in your terminal:
 
 ```
 hugo new --kind chapter books/my-first-book/my-first-chapter
