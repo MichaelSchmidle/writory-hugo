@@ -1,2 +1,2 @@
 {{ $releases := getJSON "https://api.github.com/repos/MichaelSchmidle/writory-hugo-theme/releases" }}
-{{ range first 1 $releases }}{{ .tag_name }}{{ end }}
+{{ range first 1 $releases }}<span class="badge badge-light">{{ .tag_name }}</span>{{ end }}

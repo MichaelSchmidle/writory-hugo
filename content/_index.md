@@ -7,4 +7,6 @@ The Writory theme offers **color schemes** and **font sizes** that are easy on t
 ---
 
 {{<link-button href="/books/getting-started/quick-start/" class="btn-primary">}}Quick start{{</link-button>}}
-{{<link-button href="https://github.com/MichaelSchmidle/writory-hugo-theme/releases/" class="btn-outline-secondary">}}Download {{<latest-release>}}{{</link-button>}}
+{{<link-button href="https://github.com/MichaelSchmidle/writory-hugo-theme/releases/" class="btn-outline-secondary">}}Download{{</link-button>}}
+
+{{<latest-release-date>}} {{<latest-release>}}

@@ -1,0 +1,2 @@
+{{ $releases := getJSON "https://api.github.com/repos/MichaelSchmidle/writory-hugo-theme/releases" }}
+{{ range first 1 $releases }}<small class="text-muted">{{ dateFormat "Jan 2, 2006" .published_at }}</small>{{ end }}
