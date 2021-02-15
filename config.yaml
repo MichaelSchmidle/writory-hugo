@@ -6,7 +6,7 @@ title: Writory
 theme: writory-hugo-theme
 
 params:
-  authors: ["[Michael Schmidle](https://blog.ypertex.com/authors/michael-schmidle/)"]
+  authors: ["[Michael Schmidle](https://blog.ypertex.com/)"]
   cover: writory-logo-h-og.png
   description: Documentation and showcase of the [Writory theme](https://github.com/MichaelSchmidle/writory-hugo-theme) for [Hugo](https://gohugo.io/)
   logo: writory-logo-h.svg
@@ -19,3 +19,8 @@ params:
 taxonomies:
   author: authors
   series: series
+
+caches:
+  getjson:
+    dir: ":cacheDir/:project"
+    maxAge: "10s"
