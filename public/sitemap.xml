@@ -1,86 +1,52 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  
   <url>
     <loc>https://writory.org/</loc>
     <lastmod>2020-03-03T08:59:00+01:00</lastmod>
     <priority>0</priority>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://writory.org/books/</loc>
     <lastmod>2020-03-03T08:59:00+01:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://writory.org/books/customizing-writory/custom-navigation/</loc>
     <lastmod>2020-03-03T08:59:00+01:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://writory.org/books/customizing-writory/</loc>
     <lastmod>2020-03-03T08:59:00+01:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://writory.org/books/customizing-writory/multi-language-support/</loc>
     <lastmod>2020-02-28T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://writory.org/books/customizing-writory/logo-and-logogram/</loc>
     <lastmod>2020-02-02T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://writory.org/books/customizing-writory/color-schemes/</loc>
     <lastmod>2020-01-31T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://writory.org/books/customizing-writory/metadata/</loc>
     <lastmod>2020-01-31T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://writory.org/books/getting-started/</loc>
     <lastmod>2020-01-29T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://writory.org/books/getting-started/hugo-shortcodes/</loc>
     <lastmod>2020-01-29T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://writory.org/books/getting-started/building-blocks/</loc>
     <lastmod>2020-01-28T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://writory.org/books/getting-started/quick-start/</loc>
     <lastmod>2020-01-28T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://writory.org/authors/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://writory.org/authors/michael-schmidle/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://writory.org/series/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://writory.org/books/why-this-theme/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://writory.org/series/writory/</loc>
   </url>
-  
 </urlset>

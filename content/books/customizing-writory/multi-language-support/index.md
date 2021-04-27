@@ -55,7 +55,7 @@ hugo new --kind author autoren/mein-erster-autor
 Make sure that Hugo can properly map your content. This requires an ``_index.md`` file in each localized folder that defines the appropriate ``type`` in the front matter. If you want to use German content, for example:
 
 * ``/content/buecher/_index.md`` defines ``type: books`` and ``title: Bücher``
-* ``/content/series/_index.md`` defines ``type: series`` and ``title: Serien``
+* ``/content/serien/_index.md`` defines ``type: series`` and ``title: Serien``
 * ``/content/autoren/_index.md`` defines ``type: authors`` and ``title: Autoren``
 
 (You can put the ``type`` declaration inside a ``cascade`` block to [automatically apply the type](https://gohugo.io/content-management/front-matter/#front-matter-cascade) to all the content inside the respective directory.)
